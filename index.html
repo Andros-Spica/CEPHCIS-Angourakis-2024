@@ -1,0 +1,2559 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Understanding the Emergence and Sustainability of Early Urbanization</title>
+
+		<meta name="description" content="Made with Reveal.JS, A framework for easily creating beautiful presentations using HTML, by Hakim El Hattab">
+		<meta name="author" content="Andreas Angourakis">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="reveal.js-master/dist/reset.css">
+		<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
+		<link rel="stylesheet" href="reveal.js-master/dist/theme/solarized.css" id="theme">
+		
+		<!-- Custom modifications to structure slides -->
+		<link rel="stylesheet" href="myMods.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js-master/plugin/highlight/zenburn.css" id="highlight-theme">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+            	<section data-state="title-page" data-background="images/Default_Local_diversity_impedes_the_distinction_between_rural_2_2.jpg">
+					<h3 style="color: aliceblue;">Understanding the Emergence and Sustainability of Early Urbanization</h3>
+					<h4 style="color: aliceblue;">Insights from the Indus Village Model</h4>
+					<div style="background-color: beige; border-radius: 15%;">
+						<p>
+							<small>
+								Andreas <b>Angourakis</b>
+								(<a href="https://twitter.com/AndrosSpica" target="_blank">@AndrosSpica</a>)
+							</small>
+						</p>
+						<div style="font-size: 50%">available at 
+							<a href="https://andros-spica.github.io/CEPHCIS-Angourakis-2024/" target="_blank">https://andros-spica.github.io/CEPHCIS-Angourakis-2024/</a><br>
+							<a href="https://andros-spica.github.io/CEPHCIS-Angourakis-2024/index.html?print-pdf" target="_blank">https://andros-spica.github.io/CEPHCIS-Angourakis-2024/index.html?print-pdf</a> (printable version)
+						</div>
+					</div>
+
+					<div id="left50" style="background-color:#17365c; border-radius: 15%; text-align: center;">
+						<figure>
+							<img src="https://reform.ressourcencampus-bochum.de/wp-content/uploads/2022/03/cropped-Reform_Logo_invers_RGB.png" alt="ReForm logo"
+					style="width: 250px; border: none; box-shadow: none; margin-bottom: 0%;"/>
+						<figcaption style="font-size:30%; color: orange;">reform.ressourcencampus-bochum.de</figcaption>
+						</figure>
+						<img src="https://reform.ressourcencampus-bochum.de/wp-content/uploads/2022/02/Image20211019144937-2-2000x1639.jpg" alt="Leipzig logo"
+					style="width: 100px; border: none; box-shadow: none;"/> &nbsp;
+						<img src="https://services.ruhr-uni-bochum.de/themes/custom/rub/logo.svg" alt="RUB logo"
+						style="width: 350px; border: none; box-shadow: none; background-color:#17365c;"/>
+					</div>
+					<div id="right50" style="background-color:indigo; border-radius: 15%; text-align: center;">
+						<img src="images/NASSA-logo.png" alt="Logos" style="width: 220px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						<img src="images/MPJLogo_transparent.png" alt="MPJ logo" style="width: 100px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+						&nbsp; &nbsp; 
+						<img src="https://kommunikation-marketing.uni-koeln.de/e135228/e48647/e48660/e48661/UniversitaetzuKoelnLogo_ger.jpg" alt="UzK logo"
+					style="width: 250px; border: none; box-shadow: none; margin-bottom: 0%;"/> &nbsp;
+					</div>
+
+					<aside class="notes">
+						I will be presenting today how we have approached the phenomena of early urbanisation 
+						through the lens of the Indus Civilisation and the our modelling framework, the Indus Village model. 
+						=====================================================================
+						Hoy presentaré cómo hemos abordado los fenómenos de la urbanización temprana 
+						a través de la lente de la civilización del Indo y nuestro marco de modelado, 
+						el modelo Indus Village.
+					</aside>
+				</section>
+
+				<section>
+					<div id="right60">
+						<ol style="font-size: 66%;">
+							<li>Introduction
+								<ol>
+									<li>Background, context and question</li>
+									<li>The 'downsizing' narrative</li>
+								</ol>
+							</li>
+							<br>
+							<li>Indus Village model
+								<ol>
+									<li>Overview</li>
+									<li>Land Crop model</li>
+									<li>Household Food Economy model</li>
+								</ol>
+							</li>
+							<br>
+							<li>Discussion</li>
+							<br>
+							<li>Conclusions</li>
+						</ol>
+					</div>
+					<div id="left40" style="text-align: right;">
+						<img src="images/noun-map-1751675.svg" alt="Map by Turkkub in thenounproject.com"
+						style="width: 300px; border: none; box-shadow: none; margin-bottom: 0%;">
+					</div>
+				</section>
+				
+				<section>
+					<section>
+						<h3 style="color: darkorange; font-size: 80%; text-align: left;">1. Introduction</h3>
+						<h3>1.1. Background, context and question</h3>
+					</section>
+
+					<section data-background="https://github.com/Andros-Spica/IOW-Angourakis-et-al-2019/blob/master/images/Bronze-Civs.PNG?raw=true">
+						<h3 style="background-color: white; opacity: 0.5">Indus Civilisation</h3>
+							
+						<figure class="fragment">
+							<a href="https://www.harappa.com/blog/ancient-indus-chronology-vs-other-ancient-civilizations" target="_blank">
+								<img src="https://www.harappa.com/sites/default/files/styles/galleryformatter_slide/public/map.jpg" alt="comparative-timeline"
+								style="width: 600px; border: none; box-shadow: none; margin-bottom: 0;"/>
+							</a>
+							<figcaption style="font-size: 30%;">
+								Ancient Indus Chronology vs. Other Ancient Civilizations<br>Harappa.com, courtesy of Jonathan Mark Kenoyer
+							</figcaption>
+						</figure>
+						
+
+						<aside class="notes">
+							One of the great Eurasiatic Bronze Age civilisations
+							First cities in South Asia (c.2500-1900 BC) [“experiment”?]
+							De-urbanisation - collapse, decline or transformation?
+							=====================================================
+							Una de las grandes civilizaciones de la Edad del Bronce Euroasiática
+ 							Primeras ciudades del sur de Asia (c.2500-1900 a.C.) [¿“experimento”?]
+  							Desurbanización: ¿colapso, decadencia o transformación?
+						</aside>
+						
+					</section>
+
+					<section>
+						
+						<div id="left50">
+							<figure>
+								<a href="https://www.harappa.com/content/animal-movement-hoof-and-cart-and-its-implications-understanding-exchange-within-indus" target="_blank">
+									<img src="https://www.harappa.com/sites/default/files/styles/galleryformatter_slide/public/images/animals-1.jpg" alt="comparative-timeline"
+									style="width: 600px; border: none; box-shadow: none; margin-bottom: 0;"/>
+								</a>
+								<figcaption style="font-size: 30%;">
+									hosted at Harappa.com, courtesy of Cameron Petrie
+								</figcaption>
+							</figure>
+						</div>
+
+						<div id="right40">
+							<h3>Indus Civilisation</h3>
+							<h4>Urban phase (c.2500-1900 BC)</h4>
+							<ul style="font-size: 66%">
+								<li>a.k.a. <i>Indus Valley Civilisation</i>, <i>Harappa Civilisation</i></li>
+								<li>first cities in South Asia</li>
+								<li>five known major urban centres</li>
+								<li>possibly ‘city-states’</li>
+								<li>each up to 280 km apart</li>
+								<li>urban material culture permeates their hinterlands</li>
+							</ul>
+						</div>
+
+						<aside class="notes">
+							Also names Indus Valley Civilisation and Harappa Civilisation, 
+							the Indus Civilisation presented the first cities in South Asia. 
+							The settlement distribution of this huge area was structured around five major centres, 
+							separated by extensive semi-urban and rural hinterlands.
+							==============================================================
+							También nombra Civilización del Valle del Indo y Civilización Harappa,
+  							La civilización del Indo presentó las primeras ciudades del sur de Asia.
+  							La distribución del asentamiento en esta enorme área se estructuró en torno a cinco grandes centros,
+  							separadas por extensas tierras interiores populadas por poblaciones rurales y semi-urbanas.
+						</aside>
+
+					</section>
+
+					<section data-background="https://upload.wikimedia.org/wikipedia/commons/2/2b/Mohenjo-daro.jpg">
+						<div style="border: none; box-shadow: none; background-color: white; opacity: 0.8">
+							<div id="left30">
+									<a href="https://www.nature.com/news/ancient-civilization-cracking-the-indus-script-1.18587" target="_blank">
+										<img src="https://www.nature.com/polopoly_fs/7.30435.1445255764!/image/42-19280428.jpg_gen/derivatives/landscape_630/42-19280428.jpg" alt="seal"
+										style="width: 250px; border: none; box-shadow: none; margin-bottom: 0;"/>
+									</a>
+									<img src="https://github.com/Andros-Spica/IOW-Angourakis-et-al-2019/blob/master/images/seal-seated.jpg?raw=true" alt="seal-seated"
+										style="width: 250px; border: none; box-shadow: none"/>
+							</div>
+							<div id="left40" style="text-align: center;">
+									<a href="https://commons.wikimedia.org/wiki/File:The_Dancing_Girl,_in_a_photogravure_by_Alfred_Nawrath,1938.jpg" target="_blank">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Dancing_Girl%2C_in_a_photogravure_by_Alfred_Nawrath%2C1938.jpg" alt="dancing girl"
+										style="width: 150px; border: none; box-shadow: none; margin-bottom: 0;"/>
+									</a>
+									<a href="https://commons.wikimedia.org/wiki/File:Mohenjo-daro_Priesterk%C3%B6nig.jpeg" target="_blank">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Mohenjo-daro_Priesterk%C3%B6nig.jpeg" alt="priest king"
+										style="width: 150px; border: none; box-shadow: none; margin-bottom: 0;"/>
+									</a>
+									<a href="https://www.harappa.com/slideshows/embodying-indus-life" target="_blank">
+										<img src="https://www.harappa.com/sites/default/files/styles/large/public/images/embodying-indus-life.jpg" alt="figurines"
+										style="width: 150px; border: none; box-shadow: none; margin-bottom: 0;"/>
+									</a>
+									<img src="https://github.com/Andros-Spica/IOW-Angourakis-et-al-2019/blob/master/images/pottery.jpg?raw=true" alt="pottery"
+										style="width: 150px; border: none; box-shadow: none; margin-bottom: 0;"/>
+									<img src="https://github.com/Andros-Spica/IOW-Angourakis-et-al-2019/blob/master/images/blades.jpg?raw=true" alt="blades"
+										style="width: 150px; border: none; box-shadow: none"/>
+									<img src="https://github.com/Andros-Spica/IOW-Angourakis-et-al-2019/blob/master/images/chip-stones.jpg?raw=true" alt="chip-stones"
+										style="width: 150px; border: none; box-shadow: none"/>
+							</div>
+							<div id="right30">
+									<a href="https://commons.wikimedia.org/wiki/File:The_%27Ten_Indus_Scripts%27_discovered_near_the_northern_gateway_of_the_Dholavira_citadel.jpg" target="_blank">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/The_%27Ten_Indus_Scripts%27_discovered_near_the_northern_gateway_of_the_Dholavira_citadel.jpg" alt="Dholavira signboard"
+										style="width: 190px; border: none; box-shadow: none; margin-bottom: 0;"/>
+									</a>
+									<img src="https://github.com/Andros-Spica/IOW-Angourakis-et-al-2019/blob/master/images/bungles.jpg?raw=true" alt="bungles"
+										style="width: 210px; border: none; box-shadow: none; margin-bottom: 0;"/>
+									<img src="https://github.com/Andros-Spica/IOW-Angourakis-et-al-2019/blob/master/images/beads.jpg?raw=true" alt="beads"
+										style="width: 210px; border: none; box-shadow: none; margin-bottom: 0;"/>
+									<img src="https://github.com/Andros-Spica/IOW-Angourakis-et-al-2019/blob/master/images/body-decor.jpg?raw=true" alt="body-decor"
+										style="width: 210px; border: none; box-shadow: none"/>
+							</div>
+							
+						</div>
+						<i style="font-size:33%; background-color: white; opacity: 0.8">
+							Mohenjo-daro, Sindh, Pakistan. "Great bath" and "granary".  
+							<a href="https://commons.wikimedia.org/wiki/File:Mohenjo-daro.jpg">(Source)</a>
+						</i>
+
+						<aside class="notes">
+							Urban phase corresponds to a pronounced homogeneity in material culture 
+							throughout the Indus valley and beyond, pointing to strong sphere of interaction.
+							============================================================
+							La fase urbana corresponde a una pronunciada homogeneidad en la cultura material.
+  							en todo el valle del Indo y más allá, lo que apunta a una fuerte esfera de interacción.
+						</aside>
+					</section>
+						
+					<section>
+						<h3>Long distance network</h3>
+							
+						<div id="left30">
+							<img src="https://github.com/Andros-Spica/IOW-Angourakis-et-al-2019/blob/master/images/Harappa-raw-mat.jpg?raw=true" alt="harappa-supply"
+							style="width: 330px; border: none; box-shadow: none; margin-bottom: -8%;"/>
+							<br>
+							<i style="font-size: 33%">R. Law 2010</i>
+						</div>
+						
+						<div id="left40">
+							<img src="https://github.com/Andros-Spica/IOW-Angourakis-et-al-2019/blob/master/images/3mill-trade.png?raw=true" alt="long-trade"
+							style="width: 330px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+							<img src="https://www.harappa.com/sites/default/files/essay/Figure%203.4%20Locations%20%28indicated%20by%20red%20dots%29%20sampled%20ca.%202000-2010_2.JPG" alt="long-trade"
+							style="width: 330px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+							<br>
+							<i style="font-size: 33%">T. Wilkinson 2012, Randall Law, 2024</i>
+						</div>
+
+						<div id="right30">
+							<a href="https://www.bbc.co.uk/bitesize/articles/zghy34j#zknwjsg" target="_blank">
+								<figure>
+								<img src="https://ichef.bbci.co.uk/images/ic/976xn/p02ndl1z.jpg" alt="bbc-illustration"
+								style="width: 330px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+								<figcaption style="font-size: 33%;">
+									BBC Bitesize
+								</figcaption>
+								</figure>
+							</a>
+							<br>
+							<a href="https://oxfordasiantextilegroup.wordpress.com/2015/02/26/exhibition-connecting-continents-indian-ocean-trade-and-exchange/" target="_blank">
+								<figure>
+									<img src="https://oxfordasiantextilegroup.wordpress.com/wp-content/uploads/2015/02/british-museum-connecting-continents.jpg?w=584" alt="boat-model"
+								style="width: 330px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+									<figcaption style="font-size: 33%;">
+										Oxford Asian Textile Group blog
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+
+						<aside class="notes">
+							This high cultural similarity has been linked to the existence of extensive exchange networks reaching as far as the Mediterranean,
+							evidenced by the estimated provenance of exotic materials and Indus artifacts abroad.
+							Transport both by land and water have were part of the Indus daily life.
+							====================================================================================
+							Esta gran similitud cultural se ha relacionado con la existencia de amplias redes de intercambio que llegan hasta el Mediterráneo,
+  							como lo demuestra la procedencia estimada de materiales exóticos y artefactos del Indo en el extranjero.
+  							El transporte, tanto por tierra como por agua, formaba parte de la vida cotidiana del Indo.
+						</aside>
+						
+					</section>
+
+					<section>
+						<div id="left40">
+							<a title="Petrie et al. 2017, Current Anthropology, 58(1):1-30, Fig. 1" 
+								href="https://doi.org/10.1086/690112" target="_blank">
+								<figure>
+									<img style="width: 512px; margin-bottom: -10%;" alt="Petrie et al. 2017, Fig. 1" 
+								src="https://www.journals.uchicago.edu/na101/home/literatum/publisher/uchicago/journals/content/ca/2017/ca.2017.58.issue-1/690112/20181109/images/medium/fg1_online.gif">
+									<figcaption>
+										<i style="font-size: 33%">Petrie et al. 2017, Current Anthropology</i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div id="right60">
+							<br>
+							<h3>Urbanisation and<br><i style="color: crimson">de-</i>urbanisation</h3>
+
+							<a title="Green & Petrie 2018, Journal of Field Archaeology, 43:4, 284-299, Fig. 9" 
+								href="https://doi.org/10.1080/00934690.2018.1464332" target="_blank">
+								<figure>
+									<img style="width: 512px; margin-bottom: -5%;" alt="Petrie et al. 2017, Fig. 1" 
+								src="https://www.tandfonline.com/na101/home/literatum/publisher/tandf/journals/content/yjfa20/2018/yjfa20.v043.i04/00934690.2018.1464332/20180523/images/medium/yjfa_a_1464332_f0009_b.gif">
+									<figcaption>
+										<i style="font-size: 33%">Green & Petrie 2018, Journal of Field Archaeology</i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+
+						<aside class="notes">
+							Regarding the evolution in time of settlement patterns, 
+							the Mature Harappan is marked by some nucleation (or urbanisation)
+							while, in the Late Harappan, it appears to be a dispersal towards the eastern hinterlands, 
+							though data available to date offers still an incomplete picture.
+							=============================================================
+							En cuanto a la evolución en el tiempo de los patrones de asentamiento,
+  							el Harappa maduro está marcado por cierta nucleación (o urbanización)
+  							mientras que, en el Harappa tardío, parece haber una dispersión hacia el interior del este,
+  							aunque los datos disponibles hasta la fecha todavía ofrecen una imagen incompleta.
+						</aside>
+					</section>
+
+					<section>
+						
+						<div id="left70">
+							<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Nt77IFdqLfc?si=QsqymEUed-O9dpS5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							<!--
+							<img src="https://www.arch.cam.ac.uk/sites/www.arch.cam.ac.uk/files/styles/leading/public/two-rains-banner_0.png?itok=4PcU-FuD" 
+								alt="TwoRains logos" style="width: 800px; border: none; box-shadow: none;"/>
+							-->
+							<img src="images/logos-tworains.png" alt="TwoRains logos" style="width: 800px; border: none; box-shadow: none;"/>
+						</div>
+						
+						<div id="right30">
+							
+							<br>
+							<h3>'TwoRains' project</h3>
+							<h4>ERC, 2015-2021</h4>
+							<p>
+								<small>
+								PI:
+								<a href="https://www.arch.cam.ac.uk/directory/cap59" target="_blank">Cameron A. <b>Petrie</b></a>
+							
+								</small>
+							</p>
+							<br>
+							<small>
+							<ul>
+								<li><a href="https://www.arch.cam.ac.uk/research/projects/two-rains" target="_blank">Institutional Web page</a></li>
+								<li><a href="https://tworains.wordpress.com" target="_blank">Project blog</a></li>
+								<li><a href="https://github.com/Two-Rains/indus-village-model" target="_blank">Indus Village model repository</a></li>
+							</ul>
+							</small>
+						</div>
+							
+						<aside class="notes">
+							If you would like to know more about this work and our project in general,
+							please visit our project page, our blog and the GitHub repository where 
+							all materials related to the Indus Village model can be found.
+							==================================================================
+							Si deseas saber más sobre este trabajo y nuestro proyecto en general,
+  							visite nuestra página de proyecto, nuestro blog y el repositorio de GitHub donde
+  							se pueden encontrar todos los materiales relacionados con el modelo Indus Village.
+						</aside>
+					</section>
+
+					<section>
+						
+						<div id="left30">
+							<br>
+							<h3><i style="color: crimson">summer</i> rain, <i style="color: crimson">winter</i> rain</h3>
+							<p style="font-size: 80%;">
+								“Predictable unpredictability”
+							</p>
+							<p style="font-size: 60%; text-align: center;">
+								direct precipitation<br>
+								+<br>
+								Indus river catchment 
+							</p>
+						</div>
+						
+						<div id="left40">
+							<a title="Giesche et al. 2019, Clim. Past, 15:73-90, Fig. 1" 
+								href="https://doi.org/10.5194/cp-15-73-2019" target="_blank">
+								<figure>
+									<img style="width: 400px; margin-bottom: -10%;" alt="Giesche et al. 2019, Fig. 1" 
+									src="https://www.clim-past.net/15/73/2019/cp-15-73-2019-f01-thumb.png">
+									<figcaption>
+										<i style="font-size: 33%">Giesche et al. 2019, Clim. Past</i>
+									</figcaption>
+								</figure>
+							</a>
+							
+						</div>
+						<div id="right30">
+							<br>
+							<figure>
+								<img src="https://github.com/Andros-Spica/RDMed-Angourakis-et-al-2021/blob/main/images/summer.png?raw=true" alt="summer-rain"
+								style="width: 300px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+								<img src="https://github.com/Andros-Spica/RDMed-Angourakis-et-al-2021/blob/main/images/winter.png?raw=true" alt="winter-rain"
+								style="width: 300px; border: none; box-shadow: none; margin-bottom: -10%;"/>
+								<figcaption>
+									<i style="font-size: 33%">J.-P. Baudouin (PhD dissertation)</i>
+								</figcaption>
+							</figure>
+						</div>
+						
+						<aside class="notes">
+							The regional environmental variability within the Indus Basin is high.
+							Particularly, it is marked by the differential influence of seasonal rains 
+							(winter and summer), which are dependent on climatic processes that reach 
+							far around the globe--and so can vary quite unexpectably when perceived 
+							from the human perspective.
+							====================================================================
+							La variabilidad ambiental regional dentro de la cuenca del Indo es alta.
+  							Particularmente, está marcado por la influencia diferencial de las lluvias estacionales.
+  							(invierno y verano), que dependen de procesos climáticos que alcanzan
+  							en todo el mundo, por lo que puede variar de manera bastante inesperada cuando se percibe
+  							desde la perspectiva humana.
+						</aside>
+					</section>
+	
+					<section>
+						<h3>Climate change</h3>
+						<div id="left40">
+							<a title="Giesche et al. 2019, Clim. Past, 15:73-90, Fig. 6" 
+								href="https://doi.org/10.5194/cp-15-73-2019" target="_blank">
+								<figure>
+									<img style="width: 330px; margin-bottom: -10%;" alt="Giesche et al. 2019, Fig. 6" 
+								src="https://www.clim-past.net/15/73/2019/cp-15-73-2019-f06-thumb.png">
+									<figcaption>
+										<i style="font-size: 33%">Giesche et al. 2019, Clim. Past, foraminifer isotope record</i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div id="right60">
+							<br>
+							<ul style="font-size: 80%;">
+								<li>Evidence from multiple climate proxies</li>
+								<br>
+								<li><b>Urban phase</b><br><i style="font-size: 80%;">(Mature Harappan, c. 4.5 to 4.3 ka BP)<br>&rightarrow; stronger winter precipitation</i></li>
+								<br>
+								<li><b>End of urban phase</b><br><i style="font-size: 80%;">(Mature to Late Harappan, >c. 4.1 ka BP)<br>&rightarrow; decrease in both the summer and winter precipitation</i></li>
+							</ul>
+						</div>
+
+						<aside class="notes">
+							Among the hypotheses posed to explain the trajectory of urbanisation and 
+							de-urbanisation of the Indus Civilisation, 
+							climate change has been receiving increasing support in recent years.
+							Proxy evidence to date seems to accumulate in supporting that the urban period 
+							enjoyed stronger winter precipitation, while the transition towards 
+							the Late Harappan period and the abandonment of cities coincides with 
+							the decrease of both winter and summer precipitation.
+							=======================================================================
+							Entre las hipótesis planteadas para explicar la trayectoria de la urbanización y
+  							desurbanización de la civilización del Indo,
+  							El cambio climático ha recibido un apoyo cada vez mayor en los últimos años.
+  							Hasta la fecha parece acumularse evidencia indirecta que respalda que el período urbano
+  							disfrutaron de precipitaciones invernales más fuertes, mientras que la transición hacia
+  							el período Harappa tardío y el abandono de las ciudades coincide con
+  							la disminución de las precipitaciones tanto en invierno como en verano.
+						</aside>
+					</section>
+
+					<section>
+						<div id="left50">
+							<br>
+							<a title="Petrie & Bates 2017, J. J World Prehist, 30:81, Fig. 3" 
+								href="https://doi.org/10.1007/s10963-017-9101-z" target="_blank">
+								<figure>
+									<img style="width: 450px; margin-bottom: -30%;" alt="Petrie & Bates 2017, Fig. 3" 
+										src="https://media.springernature.com/lw785/springer-static/image/art%3A10.1007%2Fs10963-017-9101-z/MediaObjects/10963_2017_9101_Fig3_HTML.gif">
+									<figcaption>
+										<i style="font-size: 33%">
+											Petrie & Bates 2017
+										</i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						
+						<div id="right50">
+							<br>
+							<h4>Crop economy</h4>
+							<ul style="font-size: 66%">
+								<li>barley/wheat (winter)</li>
+								<li>millet/rice (summer)</li>
+								<li>Pulses and other crops</li>
+								<li>Non-crops (e.g. fruits)</li>
+								<li>Plants for other uses</li>
+								<li>Multi-cropping</li>
+							</ul>
+							<br>
+							<a title="Bates, Petrie & Singh 2018,  Archaeol Anthropol Sci, 10:1703, Fig. 8" 
+								href="https://doi.org/10.1007/s12520-017-0489-2" target="_blank">
+								<figure>
+									<img style="width: 350px; margin-bottom: -5%;" alt="Bates, Petrie & Singh 2018, Fig. 8" 
+										src="https://media.springernature.com/lw785/springer-static/image/art%3A10.1007%2Fs12520-017-0489-2/MediaObjects/12520_2017_489_Fig8_HTML.gif">
+									<figcaption>
+										<i style="font-size: 33%">
+											Bates, Petrie & Singh 2018
+										</i>
+									</figcaption>
+								</figure>
+							</a>
+							<i style="font-size: 33%">
+								See also: 
+								<a title="Bates 2019, J. Open Arch. Data" 
+									href="https://doi.org/10.5334/joad.57" target="_blank">
+									Bates 2019
+								</a> | 
+								<a title="Bates 2020, Arch. Res. Asia" 
+									href="https://doi.org/10.1016/j.ara.2019.100175" target="_blank">
+									Bates 2020
+								</a>
+							</i>
+						</div>
+
+						<aside class="notes">
+							Agriculture was likely the main pilar of the Indus food economy.
+							The crops cultivated were ancient varieties of wheat and barley (grown during winter or rabi season),
+							various millets and rice (grown in pre and post monsoon or zaid and kharif seasons), 
+							among many others.
+							One key aspect raised in previous research is how farmers managed seasonality and climate
+							variation, particularly if and how multi-cropping was performed.
+							=================================================================================
+							La agricultura fue probablemente el principal pilar de la economía alimentaria del Indo.
+  							Los cultivos cultivados eran variedades antiguas de trigo y cebada (cultivadas durante el invierno o la temporada rabi),
+  							varios mijos y arroz (cultivados antes y después del monzón o en las temporadas zaid y kharif),
+  							Entre muchos otros.
+  							Un aspecto clave planteado en investigaciones anteriores es cómo los agricultores gestionaron la estacionalidad y el clima.
+  							variación, particularmente si y cómo se realizaron cultivos múltiples.
+						</aside>
+					</section>
+
+					<section>
+						<div id="left50">
+							<a title="Bassem 18 at the English language Wikipedia [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons" 
+								href="https://commons.wikimedia.org/wiki/File:Water_buffalo.jpg" target="_blank">
+								<img style="width: 215px; margin-bottom: -5%;" alt="Water buffalo" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Water_buffalo.jpg">
+							</a>
+							<a title="Pavanaja [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" 
+							href="https://commons.wikimedia.org/wiki/File:Hariana_02.JPG" target="_blank">
+							<img style="width: 215px; margin-bottom: -5%;" alt="Hariana 02" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Hariana_02.JPG/512px-Hariana_02.JPG">
+							</a>
+							<a title="nubra valley herding goats" 
+							href="https://pxhere.com/en/photo/1289867?utm_content=shareClip&utm_medium=referral&utm_source=pxhere" target="_blank">
+							<img style="width: 215px; margin-bottom: -5%;" src="https://c.pxhere.com/photos/e4/cb/goats_plateau_highlands_ladakh_india_nubra_valley_mountain_pass_nubra-1289867.jpg!d" srcset="https://c.pxhere.com/photos/e4/cb/goats_plateau_highlands_ladakh_india_nubra_valley_mountain_pass_nubra-1289867.jpg!d" alt="landscape, wilderness, mountain, snow, mountain range, flock, wildlife, goat, herd, livestock, sheep, mammal, goats, stones, mountains, plateau, sheeps, india, yak, highlands, tundra, ladakh, himalayas, mountain pass, karg, nubra, sparse, shepherds, goatherd, mountainous landforms, cattle like mammal, khardung la, nubra valley, mountain living, Free Images In PxHere">
+							</a>
+							<a title="Emőke Dénes [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" 
+							href="https://commons.wikimedia.org/wiki/File:Sheep_India_3.jpg" target="_blank">
+							<img style="width: 215px; margin-bottom: -5%;" alt="Sheep India" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Sheep_India_3.jpg">
+							</a>
+							<a title="fishing in the Indus" 
+							href="https://www.harappa.com/blog/indus-river-fishing-and-fishmongers-look-back" target="_blank">
+							<img style="width: 215px; margin-bottom: -5%;" alt="fishing Indus" src="https://www.harappa.com/sites/default/files/indus-fishing.jpg">
+							</a>
+							<a title="Pascal Maître, CC BY-SA 3.0 IGO &lt;https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Mohana_fishermen_hunters_use_lures_from_real_birds_to_catch_more_birds.jpg">
+							<img style="width: 215px; margin-bottom: 0%;" alt="Mohana fishermen hunters use lures from real birds to catch more birds" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Mohana_fishermen_hunters_use_lures_from_real_birds_to_catch_more_birds.jpg/512px-Mohana_fishermen_hunters_use_lures_from_real_birds_to_catch_more_birds.jpg">
+							</a>
+						</div>
+						<div id="right50">
+							<h4>Animal economy</h4>
+							<ul style="font-size: 66%">
+								<li><b>Animal husbandry:</b><br>zebu, water buffalo, sheep, goat, pig, chicken(?)</li>
+								<li>Fishing: freshwater fish and molluscs</li>
+								<li>Hunting: wild ruminants, hare, birds</li>
+							</ul>
+							<br>
+							<p style="font-size: 33%">
+								<a title="Joglekar, Sharada & Abhayan 2013" 
+									href="https://www.researchgate.net/publication/321675654_Faunal_Diversity_during_the_Harappan_Period_in_Haryana_A_Review" target="_blank">
+									Joglekar, Sharada & Abhayan 2013
+								</a> |
+								<a title="Chase, Meiggs & Ajithprasad 2020" 
+									href="https://doi.org/10.1016/j.jaa.2020.101173" target="_blank">
+									Chase, Meiggs & Ajithprasad 2020
+								</a>
+								<br>
+								<a title="Abhayan et al. 2020" 
+									href="https://doi.org/10.1016/j.jasrep.2020.102547" target="_blank">
+									Abhayan et al. 2020
+								</a> |
+								<a title="Lightfoot et al. 2020" 
+									href="https://doi.org/10.1016/j.ara.2020.100212" target="_blank">
+									Lightfoot et al. 2020
+								</a> |
+								<a title="LJ Miller 2004" 
+									href="https://www.proquest.com/dissertations-theses/urban-economies-early-states-secondary-products/docview/305167169/se-2" target="_blank">
+									LJ Miller 2004
+								</a> |
+								<a href="https://www.cambridge.org/us/universitypress/subjects/archaeology/prehistory/ancient-indus-urbanism-economy-and-society?format=PB&isbn=9780521576529" target="_blank">
+									RP Wright 2010
+								</a>
+							</p>
+							<p>
+								Secondary products? <br>
+								Herding?<br>
+								Pack animals or goods?
+							</p>
+							<p style="font-size: 33%;">
+								<a title="Petrie et al. 2024" 
+									href="https://doi.org/10.1038/s41598-023-50249-3" target="_blank">
+									Petrie et al. 2024
+								</a>
+							</p>
+						</div>
+
+						<aside class="notes">
+							Animal husbandry is also thought to have been central in the Indus food economy.
+							together with other activities such as hunting and fishing, which are still widely present today.
+							Particularly, several authors have raised the hypothesis of mid-to-long 
+							distance herding as having a role not only in food economy,
+							but in shaping trade and cultural diversity the region.
+							===========================================================
+							También se cree que la cría de animales fue fundamental en la economía alimentaria del Indo.
+  							junto con otras actividades como la caza y la pesca, que todavía hoy están muy presentes.
+  							En particular, varios autores han planteado la hipótesis de un crecimiento de mediano a largo
+  							El pastoreo a distancia desempeña un papel no sólo en la economía alimentaria,
+  							sino en la configuración del comercio y la diversidad cultural de la región.
+						</aside>
+					</section>
+						
+					<section>
+						<div id="left50">
+							<a title="The National Museum “Historical Gastronomica - The Indus Dining Experience” event in New Delhi" href="https://www.jatinverma.org/what-did-the-harappan-people-really-eat">
+								<img style="width: 400px; margin-bottom: -5%;" src="https://www.jatinverma.org/uploads/2020_02/pasted_image_0_(8)4.png">
+							</a>
+							<a title="Clockwise: Sauteed offals, braised Parwal, stuffed chickpea, braised fowl, salt cured tender lamb Source: Neera Majumdar | ThePrint" href="https://theprint.in/opinion/i-ate-the-non-vegetarian-harappan-meal-and-had-no-beef-with-it/370492/">
+								<img style="width: 400px; margin-bottom: -5%;" src="https://static.theprint.in/wp-content/uploads/2020/02/WhatsApp-Image-2020-02-25-at-10.17.26-AM.jpeg?compress=true&quality=80&w=800&dpr=1.3">
+							</a>
+							<a title="Mutton Liver fry or 'Kaleji masala', a popular non-vegetarian recipe from India and Pakistan. Source: Telegraph India" href="https://www.telegraphindia.com/india/harappa-era-food-show-shies-out-of-non-veg-selections/cid/1747261">
+								<img style="width: 400px; margin-bottom: -5%;" alt="Mutton Liver fry or 'Kaleji masala', a popular non-vegetarian recipe from India and Pakistan." src="https://assets.telegraphindia.com/telegraph/4e91b56a-e17a-453e-99cf-528083127828.jpg">
+							</a>
+						</div>
+						<div id="right50">
+							<br>
+							<h4>Food processing</h4>
+							<p style="font-size: 50%">
+								Lipids residue analysis:
+								<ul style="font-size: 50%">
+									<li>C3 vs C4 plants signature</li>
+									<li>Meat vs secondary products</li>
+									<li>Ruminant vs non-ruminant fat</li>
+								</ul>
+							</p>
+							<a title="Suryanarayan et al. 2021, Fig. 4" 
+								href="https://doi.org/10.1016/j.jas.2020.105291" target="_blank">
+								<figure>
+									<img style="width: 400px; margin-bottom: -8%;" alt="Suryanarayan et al. 2021, Fig. 4" 
+										src="https://ars.els-cdn.com/content/image/1-s2.0-S0305440320302120-gr4.jpg">
+									<figcaption>
+										<i style="font-size: 33%">
+											Suryanarayan et al. 2021
+										</i>
+									</figcaption>
+								</figure>
+							</a>
+							<p style="font-size: 66%;">
+								Stewing or roasting?<br>Are contemporary culinary practices a good reference?
+							</p>
+						</div>
+
+						<aside class="notes">
+							Other bioarchaeological analyses have contributed to our understanding of Indus foodways,
+							but also raised additional challenges to be tackled in the future,
+							such as, in lipid analyses, the confounding effect of C3/C4 plants as direct ingredients
+							or as fodder of animals under different feeding regimes.
+							A polemic still surrounds the validity of holding certain contemporary 
+							culinary practices as references to understanding those in the ancient Indus.
+							===============================================================
+							Otros análisis bioarqueológicos han contribuido a nuestra comprensión de las costumbres alimentarias del Indo,
+  							pero también planteó desafíos adicionales que deberán abordarse en el futuro,
+  							como, en los análisis de lípidos, el efecto de confusión de las plantas C3/C4 como ingredientes directos
+  							o como forraje para animales bajo diferentes regímenes alimentarios.
+  							Todavía existe una polémica en torno a la validez de sostener ciertas creencias contemporáneas.
+  							Prácticas culinarias como referencias para comprender las del antiguo Indo.
+						</aside>
+					</section>
+
+					<section>
+						<h4>Food exchange</h4>
+						<a title="Biswarup Ganguly, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Indus_Valley_Civilization_-_Science_and_Technology_Heritage_of_India_Gallery_-_Science_Exploration_Hall_-_Science_City_-_Kolkata_2016-02-22_0507.JPG">
+							<img style="width: 450px; margin-bottom: -2%;" alt="Indus Valley Civilization - Science and Technology Heritage of India Gallery - Science Exploration Hall - Science City - Kolkata 2016-02-22 0507" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Indus_Valley_Civilization_-_Science_and_Technology_Heritage_of_India_Gallery_-_Science_Exploration_Hall_-_Science_City_-_Kolkata_2016-02-22_0507.JPG/512px-Indus_Valley_Civilization_-_Science_and_Technology_Heritage_of_India_Gallery_-_Science_Exploration_Hall_-_Science_City_-_Kolkata_2016-02-22_0507.JPG">
+						</a>
+						<a title="Biswarup Ganguly, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Indus_Valley_Diorama_-_Indian_Science_and_Technology_Heritage_Gallery_-_National_Science_Centre_-_New_Delhi_2014-05-06_0805.JPG">
+							<img style="width: 450px; margin-bottom: -2%;" alt="Indus Valley Diorama - Indian Science and Technology Heritage Gallery - National Science Centre - New Delhi 2014-05-06 0805" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Indus_Valley_Diorama_-_Indian_Science_and_Technology_Heritage_Gallery_-_National_Science_Centre_-_New_Delhi_2014-05-06_0805.JPG/512px-Indus_Valley_Diorama_-_Indian_Science_and_Technology_Heritage_Gallery_-_National_Science_Centre_-_New_Delhi_2014-05-06_0805.JPG">
+						</a>
+						<br>
+						<i style="font-size: 66%">
+							Household autonomy, local reciprocity and/or market-like economy?<br>
+							Do hinterlands feed urban centres?
+						</i>
+						<br>
+						<p style="font-size: 33%">
+							<a href="https://www.cambridge.org/us/universitypress/subjects/archaeology/prehistory/ancient-indus-urbanism-economy-and-society?format=PB&isbn=9780521576529" target="_blank">
+								RP Wright 2010
+							</a>
+						</p>
+						
+						<aside class="notes">
+							Food redistribution is an interesting, yet widely unexplored aspect.
+							There are, of course, abundant evidence for exchange of a variety of materials, 
+							including organic materials, reaching even relatively far partners,
+							such as the Sumerian cities.
+							Would food exchange be relevant to the subsistence of villages though?
+							========================================================
+							La redistribución de alimentos es un aspecto interesante, aunque poco explorado.
+  							Por supuesto, existen abundantes pruebas del intercambio de una variedad de materiales,
+  							incluyendo materiales orgánicos, llegando incluso a sociedades relativamente lejanas,
+  							como las ciudades sumerias.
+  							¿Sería relevante el intercambio de alimentos para la subsistencia de las aldeas?
+						</aside>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h3 style="color: darkorange; font-size: 80%; text-align: left;">1. Introduction</h3>
+						<h3>1.2. The 'downsizing' narrative</h3>
+					</section>
+
+					<section>
+						<p>
+							How does <i style="color: crimson;">climate change</i> cause <i style="color: royalblue;">de-urbanisation</i>?
+						</p>
+						<p class="fragment">
+							narrative &rightarrow; mechanism
+						</p>
+						<div class="fragment">
+							<p>
+								"testable narrative"
+							</p>
+							<p style="font-size: 50%;">
+								<a href="https://doi.org/10.1088/1748-9326/abacf9" target="_blank">
+									Angourakis et al. 2020, Environmental Research Letters
+								</a>
+							</p>
+						</div>
+
+						<aside class="notes">
+							How does climate cause de-urbanisation?
+							This seemingly trivial question has still much to be defined in order to be properly answered.
+							Our goal here is to fix a working narrative, and formulate a mechanism that expresses it using mathematical formalism.
+							We called this a testable narrative, which I will summarise next. You can also read more about it in this paper.
+							==========================================
+							¿Cómo causa el clima la desurbanización?
+ 							Esta pregunta aparentemente trivial todavía tiene mucho que definir para poder responderla adecuadamente.
+  							Nuestro objetivo aquí es fijar una narrativa funcional y formular un mecanismo que la exprese utilizando el formalismo matemático.
+  							A esto lo llamamos narrativa comprobable, que resumiré a continuación. También puede leer más sobre esto en este artículo.
+						</aside>
+
+					</section>
+
+					<section>
+						
+						<div id="right30">
+							<br>
+							<p style="font-size: 50%; text-align: left; margin-left: 5%;">
+								<b>emergent trade node hierarchy</b>
+								<br><br>
+								'hubs' can emerge, fluctuate, and collapse if trade involves a <b style="color: darkorange;">positive feed-back loop</b>
+							</p>
+						</div>
+						
+						<div id="right40">
+							<video controls autoplay="true" muted="true" style="margin-bottom: -5%;">
+								<source data-src="https://github.com/Andros-Spica/IOW-Angourakis-et-al-2019/raw/master/images/PondTrade%20model-example.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+							<p style="font-size: 33%">
+								<a href="https://github.com/Andros-Spica/PondTrade"  target="_blank">PondTrade model</a>
+							</p>
+						</div>
+						
+						<div id="right30">
+							<h3>Urbanism is the product of a complex system</h3>
+						</div>
+
+						<aside class="notes">
+							First, we shall assume urbanism to be a product of higher complexity in societies.
+							More specifically, we assume that a hierarchical size distribution of settlements is (eventually) the outcome of the repeated interaction between them.
+							This idea is illustrate in this toy model, where hubs emerge and collapse due to the micro dynamics of trade, defined in very simple terms.
+							One single feed-back loop is required. 
+							=================================================================================
+							En primer lugar, asumiremos que el urbanismo es un producto de una mayor complejidad en las sociedades.
+  							Más específicamente, suponemos que una distribución jerárquica del tamaño de los asentamientos es (eventualmente) el resultado de la interacción repetida entre ellos.
+  							Esta idea se ilustra en este modelo de juguete, donde los centros emergen y colapsan debido a la microdinámica del comercio, definida en términos muy simples.
+							Se requiere un único circuito de retroalimentación.
+						</aside>
+					</section>
+
+					<section>
+						<h4>Local diversity hinders settlement rural-urban differentiation</h4>
+						<div id="left40">
+							<figure>
+								<img src="images/Default_Local_diversity_impedes_the_distinction_between_rural_2.jpg" style="margin-bottom: -10%;">
+								<figcaption>
+									<i style="font-size: 33%">
+										generated with Leonardo.AI
+									</i>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div id="right60" style="font-size: 80%;">
+							<p class="fragment">
+								diversity of small communities
+							</p>
+							<p class="fragment">
+								&rightarrow; adaptation to environmental unpredictability (local)
+							</p>
+							<p class="fragment">
+								&rightarrow; decreased production (regional)
+							</p>
+							<p class="fragment">
+								&rightarrow; decreased surplus directed to exchange
+							</p>
+							<p class="fragment">
+								&rightarrow; decreased urbanism
+							</p>
+						</div>
+
+						<aside class="notes">
+							We will also consider that local diversity hinders this phenomena.
+							If the diversity of small communities are linked to the adaptation to local environment,
+							and such environments are widely unpredictable, such as in the Indus,
+							the aggregated regional production will be decreased, decresing in turn the surplus for exchange, and thus urbanism.
+							===========================================================
+							También consideraremos que la diversidad local obstaculiza este fenómeno.
+  							Si la diversidad de las pequeñas comunidades está vinculada a la adaptación al entorno local,
+  							y esos entornos son muy impredecibles, como en el Indo,
+							la producción regional agregada disminuirá, disminuyendo a su vez el excedente de intercambio y, por tanto, el urbanismo.
+						</aside>
+						
+					</section>
+
+					<section>
+						
+						<div id="left50">
+							<a title="Randy Olson and Bjørn Østman [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" 
+								href="https://commons.wikimedia.org/wiki/File:Visualization_of_a_population_evolving_in_a_static_fitness_landscape.gif">
+								<img style="width: 512px; margin-bottom: -10%;" alt="Visualization of a population evolving in a static fitness landscape" 
+								src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Visualization_of_a_population_evolving_in_a_static_fitness_landscape.gif">
+							</a>
+							<a title="Randy Olson and Bjørn Østman [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" 
+								href="https://commons.wikimedia.org/wiki/File:Visualization_of_a_population_evolving_in_a_dynamic_fitness_landscape.gif">
+								<img style="width: 512px; margin-bottom: -10%;" alt="Visualization of a population evolving in a dynamic fitness landscape" 
+								src="https://upload.wikimedia.org/wikipedia/commons/a/af/Visualization_of_a_population_evolving_in_a_dynamic_fitness_landscape.gif">
+							</a>
+						</div>
+
+						<div id="right50" style="font-size: 66%;">
+							<h3>Climate adaptive pull</h3>
+
+							<p class="fragment">
+								favourable conditions &rightarrow;<br>relaxation, risk taking, maximisers
+							</p>
+							<p class="fragment">
+								unfavourable conditions &rightarrow;<br>stress, risk avoidance
+							</p>
+							<p class="fragment">
+								Indus food economy builds up under increasing favorable conditions
+							</p>
+							<p class="fragment">
+								and downsize back to local diversity
+							</p>
+							<p class="fragment">
+								<b style="color: darkorange;">diversification</b> as more stable strategy under uncertain conditions
+							</p>
+						</div>
+
+						<aside class="notes">
+							We are therefore considering that there is an adaptive pull respoding to climate conditions.
+							When those are favourable, adaptation will be relaxed, allowing for more risk takers and maximisers.
+							When unfavourable, the system will be under stress, selecting for adaptation and rewarding risk avoidance.
+							Our narrative then considers that the Indus Civilisation food economy,
+							initially small-scale and varied,
+							builds up under favourable conditions and then it forced to "downsize" once conditions become unreliable.
+							That is, we are assuming that diversification is a more stable strategy under uncertain conditions.
+							=====================================================================
+							Por tanto, estamos considerando que existe un tirón adaptativo que responde a las condiciones climáticas.
+  							Cuando éstas sean favorables, la adaptación se relajará, permitiendo que más personas asuman y maximicen riesgos.
+  							Cuando sea desfavorable, el sistema estará bajo presión, seleccionando la adaptación y recompensando la evitación de riesgos.
+  							Nuestra narrativa considera entonces que la economía alimentaria de la civilización del Indo,
+  							inicialmente de pequeña escala y variada,
+  							se acumula en condiciones favorables y luego se ve obligado a "reducir su tamaño" una vez que las condiciones se vuelven poco confiables.
+  							Es decir, suponemos que la diversificación es una estrategia más estable en condiciones de incertidumbre.
+						</aside>
+					</section>
+
+					<section>
+						
+						<div id="left50">
+							<figure>
+								<img src="images/Default_The_oncethriving_EXCHANGE_NETWORK_in_the_Indus_Civilis_3.jpg" style="margin-bottom: -8%;">
+								<figcaption>
+									<i style="font-size: 33%">
+										generated with Leonardo.AI
+									</i>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div id="right50" style="font-size: 66%;">
+							<h3>The exchange network collapses</h3>
+							<p class="fragment">
+								drought &rightarrow;<br>less production + more local diversity
+							</p>
+							<p class="fragment">
+								&rightarrow; less surplus
+							</p>
+							<p class="fragment">
+								&rightarrow; less exchange opportunities
+							</p>
+							<p class="fragment">
+								&rightarrow; less frequency of exchange<br>
+								and less incentives for long-distance exchange
+							</p>
+						</div>
+
+						<aside class="notes">
+							Climate change and unexpected and prolonged droughts would decrese aggregate production while estimulating local diversity,
+							which would both cause a decrease in the surplus that could be use for exchange,
+							which in turn would have led to fewer and closer exchange transactions,
+							collapsing the broad far-reaching network integrating the entire region and beyond.
+							======================================================================
+							El cambio climático y las sequías inesperadas y prolongadas disminuirían la producción agregada y al mismo tiempo estimularían la diversidad local.
+ 							lo que causaría una disminución en el excedente que podría usarse para el intercambio,
+  							lo que a su vez habría dado lugar a menos transacciones de intercambio y más cercanas,
+							colapsando la amplia red de gran alcance que integra a toda la región y más allá.
+						</aside>
+
+					</section>
+
+					<section>
+
+						<div id="left50">
+							<figure>
+								<img src="images/Default_The_oncethriving_EXCHANGE_NETWORK_in_the_Indus_Civilis_0.jpg" style="margin-bottom: -8%;">
+								<figcaption>
+									<i style="font-size: 33%">
+										generated with Leonardo.AI
+									</i>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div id="right50" style="font-size: 66%;">
+							<h3>The subsistence crisis led to migration and abandonment of cities</h3>
+							<p class="fragment">
+								insufficient exchange
+							</p>
+							<p class="fragment">
+								&rightarrow; insufficient food for urban inhabitants
+							</p>
+							<p class="fragment">
+								&rightarrow; urban population motivated to migrate:<br>
+								<ul class="fragment">
+									<li>to rural settlements</li>
+									<li>to other, wetter regions</li>
+								</ul>
+							</p>
+						</div>
+
+						<aside class="notes">
+							Without sufficient exchange between cities and their hinterlands,
+							urban inhabitants found themselves with scarsity of basic goods, particularly foodstuffs.
+							Such it would have been a food crisis, leaving surviving urban population with two alternatives:
+							move to rural settlements (possibly relying on kinship networks)
+							move to other regions, less affected by drought.
+							==============================================================
+							Sin un intercambio suficiente entre las ciudades y sus zonas del interior,
+  							Los habitantes urbanos se encontraron con escasez de bienes básicos, particularmente alimentos.
+  							Tal hubiera sido una crisis alimentaria, dejando a la población urbana superviviente con dos alternativas:
+  							trasladarse a asentamientos rurales (posiblemente basándose en redes de parentesco)
+  							trasladarse a otras regiones, menos afectadas por la sequía.
+						</aside>
+						
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h3 style="color: darkorange; font-size: 80%; text-align: left;">2. Indus Village model</h3>
+						<h3>2.1. Overview</h3>
+					</section>
+
+					<section>
+						<h3>End-goals</h3>
+						<p>
+							Explore human <b style="color: crimson">adaptation to the variability</b><br>
+							in landscapes of <i style="color:royalblue">NW India</i> during the <i style="color: royalblue">Mature Harappan</i> (urban phase of the Indus Civilisation)
+						</p>
+						<p class="fragment">
+							Expose the <b style="color: crimson">sustainability</b> of 
+							<i style="color:royalblue">food production regimes</i>,<br>
+							mainly in terms of <i style="color: crimson">cropping strategies</i>, <br>
+							in front of <i style="color:royalblue">climate change</i>
+						</p>
+						
+						<aside class="notes">
+							The Two Rains modelling programme was set to explore human adaptation to the 
+							variability in landscapes of NW India during the Mature Harappan.
+							Specifically, we focused on the surroundings of the sites in Haryana 
+							studied by Two Rains and former projects.
+							|
+							Our aim is to expose the sustainability of food production regimes, 
+							especially in terms of the diversity of cropping strategies,
+							and if and how this diversity was favourable or adverse to urbanisation.
+							=====================================================================
+							El programa de modelado Two Rains se creó para explorar la adaptación humana al
+  							Variabilidad en los paisajes del noroeste de la India durante el Harappa maduro.
+  							Específicamente, nos centramos en los alrededores de los sitios en Haryana.
+  							estudiado por Two Rains y proyectos anteriores.
+  							|
+  							Nuestro objetivo es exponer la sostenibilidad de los regímenes de producción de alimentos,
+  							especialmente en términos de la diversidad de estrategias de cultivo,
+  							y si y cómo esta diversidad era favorable o adversa a la urbanización.
+						</aside>
+					</section>
+
+					<section>
+						<i class="fragment"></i>
+						<div class="r-stack">
+							<img src="images/Household-model-infograph-v6_p1.png" alt="Goal model p1"
+							style="border: none; box-shadow: none"/>
+							<img class="fragment" src="images/Household-model-infograph-v6_p2.png" alt="Goal model p2"
+							style="border: none; box-shadow: none"/>
+							<img class="fragment" src="images/Household-model-infograph-v6_p3.png" alt="Goal model p3"
+							style="border: none; box-shadow: none"/>
+							<img class="fragment" src="images/Household-model-infograph-v6_p4.png" alt="Goal model p4"
+							style="border: none; box-shadow: none"/>
+							<img class="fragment" src="images/Household-model-infograph-v6_p5.png" alt="Goal model p5"
+							style="border: none; box-shadow: none"/>
+							<img class="fragment" src="images/Household-model-infograph-v6_p6.png" alt="Goal model p6"
+							style="border: none; box-shadow: none"/>
+							<img class="fragment" src="images/Household-model-infograph-v6_p7.png" alt="Goal model p7"
+							style="border: none; box-shadow: none"/>
+							<img class="fragment" src="images/Household-model-infograph-v6_p8.png" alt="Goal model p8"
+							style="border: none; box-shadow: none"/>
+							<img class="fragment" src="images/Household-model-infograph-v6_p9.png" alt="Goal model p9"
+							style="border: none; box-shadow: none"/>
+							<img class="fragment" src="images/Household-model-infograph-v6_p10.png" alt="Goal model p10"
+							style="border: none; box-shadow: none"/>
+							<img class="fragment" src="images/Household-model-infograph-v6_p11.png" alt="Goal model p11"
+							style="border: none; box-shadow: none"/>
+						</div>
+						<i class="fragment"></i>
+						
+						<aside class="notes">
+							First, we defined what we believe are essential elements of rural, food-producing settlements.
+							Our approach was to re-imagine an integral, yet blurry picture of what village life in the Indus 
+							would look like, based on known archaeological evidence, but also on minimum assumptions informed 
+							by parallels in space and time.
+							|
+							In a broad sense, these elements include:
+							| Climate: more specifically the weather conditions related to solar radiation, temperature and precipitation. 
+							| Land: which includes soil, water and cover.
+							| Food production: mainly crops, which translate the condition of land and climate into foodstuff.
+							| A human population: organised in households and groups and inhabiting a settlement.
+							| The demography rulling the dynamics of this population,
+							| The nutritional budget that regulates its health,
+							| The diet that feeds into it,
+							| and the food production economy that describes how production, distribution and storage of foodstuffs happens.
+							| A exchange system that connects agents to other agents, and to agents in settlements outside the local economy.
+							| And finally, bonding all together, the decision-making process that households would go through 
+							to chose and revise their food production strategies, particularly in terms of the triplet use-conditions-investment.
+							|
+							Everything strictly within a small scale, 
+							with one-hectare land units covering a total area of twenty-five kilometres squared, 
+							and with processes being iterated up to a daily basis.
+							================================================================
+							Primero, definimos lo que creemos que son elementos esenciales de los asentamientos rurales productores de alimentos.
+  Nuestro enfoque fue reimaginar una imagen integral, aunque borrosa, de cómo es la vida en las aldeas del Indo.
+  parecería, basado en evidencia arqueológica conocida, pero también en supuestos mínimos informados
+  por paralelos en el espacio y el tiempo.
+  |
+  En un sentido amplio, estos elementos incluyen:
+  | Clima: más concretamente las condiciones meteorológicas relacionadas con la radiación solar, la temperatura y las precipitaciones.
+  | Suelo: que incluye suelo, agua y cobertura.
+  | Producción de alimentos: principalmente cultivos, que traducen las condiciones de la tierra y el clima en alimentos.
+  | Una población humana: organizada en hogares y grupos y que habita en un asentamiento.
+  | La demografía rige la dinámica de esta población,
+  | El presupuesto nutricional que regula su salud,
+  | La dieta que lo alimenta,
+  | y la economía de producción de alimentos que describe cómo se produce, distribución y almacenamiento de alimentos.
+  | Un sistema de intercambio que conecta a los agentes con otros agentes y con agentes en asentamientos fuera de la economía local.
+  | Y finalmente, uniendo a todos, el proceso de toma de decisiones por el que pasarían los hogares.
+  elegir y revisar sus estrategias de producción de alimentos, particularmente en términos del triplete uso-condiciones-inversión.
+  |
+  Todo estrictamente a pequeña escala,
+  con unidades de terreno de una hectárea que cubren una superficie total de veinticinco kilómetros cuadrados,
+  y con procesos que se repiten diariamente.
+						</aside>
+					</section>
+					
+					<section>
+						<div id="left50">
+							<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/diagrams/00-OverallDesign.png" target="_blank">
+								<img src="https://github.com/Andros-Spica/indus-village-model/blob/master/diagrams/00-OverallDesign.png?raw=true" alt="Indus Village design"
+								style="width: 400px; border: none; box-shadow: none; margin-bottom: 0%;"/>
+							</a>
+						</div>
+						<div id="left50">
+							<h3>Modular design</h3>
+							<a class="fragment" href="https://github.com/Andros-Spica/indus-village-model/blob/master/diagrams/RoadMapSoFar_2022-06.png" target="_blank">
+								<img src="https://github.com/Andros-Spica/indus-village-model/blob/master/diagrams/RoadMapSoFar_2022-06.png?raw=true" alt="road map so far"
+									style="width: 400px; border: none; box-shadow: none; margin-bottom: 0%;"/>
+							</a>
+							
+							<ul style="font-size: 50%;">
+								<li class="fragment">Implementation in <b style="color: crimson">NetLogo</b>, documentation in <i style="color: royalblue">pseudocode diagrams</i> and <i style="color: royalblue">R markdown</i></li>
+								<li class="fragment"><b style="color: crimson">parameter</b> exploration (sensitivity analysis)</li>
+								<li class="fragment"><b style="color: crimson">scenarios</b> (parameters, programmed trends<br>and changes, alternative algorithms)</li>
+								<li class="fragment"><a href="https://github.com/Two-Rains/indus-village-model" target="_blank">Indus Village model repository</a></li>
+							</ul>
+						</div>
+						
+						<aside class="notes">
+							Deriving from this general picture, we represented all these aspects 
+							as submodels or parts of submodels, highlighted here in blue.
+							These submodels are intentionally designed as modules,
+							meaning they can function independently as models, if the required input is given.
+							Besides the advantage in terms of code stability and extensibility,
+							our hope is that each of these submodels can be more easily re-used by others in the future.
+							|
+							The full version of the Indus Village model is still under development.
+							Here I will concentrate on those parts that are fully consolidated and explored. 
+							We are thus leaving aside the submodels dealing strictly with human-related mechanisms.
+							| 
+							The model is implemented in NetLogo in a modular and progressive manner, 
+							while each part is also thoroughly documented with pseudo-code diagrams and 
+							R markdown demonstrations. 
+							| 
+							To properly understand the model at each stage of complexity, 
+							we are performing extensive sensitivity analyses. 
+							| 
+							To inform and test our hypotheses, we perform experiments designed to 
+							represent scenarios, particularly by varying parameters, programming trends and changes,
+							and using alternative designs.
+							==========================================================================
+							A partir de este panorama general, representamos todos estos aspectos.
+  como submodelos o partes de submodelos, resaltados aquí en azul.
+  Estos submodelos están diseñados intencionalmente como módulos,
+  lo que significa que pueden funcionar de forma independiente como modelos, si se proporciona la información requerida.
+  Además de la ventaja en términos de estabilidad y extensibilidad del código,
+  Nuestra esperanza es que cada uno de estos submodelos pueda ser reutilizado más fácilmente por otros en el futuro.
+  |
+  La versión completa del modelo Indus Village aún está en desarrollo.
+  Aquí me concentraré en aquellas partes que están plenamente consolidadas y exploradas.
+  Por tanto, estamos dejando de lado los submodelos que se ocupan estrictamente de mecanismos relacionados con los humanos.
+  |
+  El modelo se implementa en NetLogo de forma modular y progresiva,
+  mientras que cada parte también está minuciosamente documentada con diagramas de pseudocódigo y
+  Demostraciones de rebajas de R.
+  |
+  Para comprender adecuadamente el modelo en cada etapa de complejidad,
+  Estamos realizando extensos análisis de sensibilidad.
+  |
+  Para informar y probar nuestras hipótesis, realizamos experimentos diseñados para
+  representar escenarios, particularmente mediante parámetros variables, tendencias de programación y cambios,
+  y el uso de diseños alternativos.
+						</aside>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h3 style="color: darkorange; font-size: 80%; text-align: left;">2. Indus Village model</h3>
+						<h3>2.2. Land Crop model</h3>
+					</section>
+
+					<section>
+						<h4><i style="color: slateblue">Crop</i> model</h4>
+						
+						<div id="left30">
+							<p style="font-size: 66%;">
+								Adapted from<br>the <i style="color: crimson;">SIMPLE crop model</i>
+								<br>
+								<a title="Zhao et al. 2019" 
+							href="https://doi.org/10.1016/j.eja.2019.01.009" target="_blank">
+							(Zhao et al. 2019)</a>
+							</p>
+
+							<ul style="font-size: 50%;">
+								<li>One model, many crops</li>
+								<li>Crops defined by 13 parameters</li>
+								<li>Integrates ARID</li>
+								<li>Biomass growth: RUE modulated by temperature, CO<sub>2</sub> and ARID</li>
+								<li>A single growth phase (def. thermal time)</li>
+								<li>
+									Output: <i style="color: crimson;">yield</i> (g·m<sup>-2</sup>)
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+						<div id="right70" class="fragment">
+							<p style="font-size: 50%;">
+								Crops - subset of Indus subset of Indus staple crops
+							</p>
+							<img src="images/cropTable.jpg" alt="Crop model - cropTable"
+							style="width: 600px; border: none; box-shadow: none"/>
+							<br>
+							<i style="font-size: 50%;">variable in: season &amp; cycle duration | RUE level | water stress sensitivity</i>
+
+							<br>
+							<img class="fragment" src="images/Angourakis-et-al-2020_Fig6_crop.jpg" alt="Crop model - simulation run"
+							style="width: 400px; border: none; box-shadow: none"/>
+						</div>
+
+						<aside class="notes">
+							As you have seen in the diagram, the weather and soil water models feed their outcomes directly 
+							into the Crop model, whose function in turn is to calculate the yields of one or more types 
+							of crop growing in specific conditions.  
+							|
+							With the purpose of representing multi-cropping practices, 
+							we have chosen to use the SIMPLE crop model,
+							which simplifies crop dynamics enough so we can operate with multiple crops, 
+							without the necessity of dealing with multiple models and a high number of parameters.
+							The SIMPLE crop model calculates the daily biomass based on growth stages 
+							defined in thermal time and the modulation of the radiation use efficiency by temperature, 
+							carbon dioxide concentrations and water stress.
+							| 
+							After implementing this model in NetLogo, we adapted it to a spatial scheme where multicropping is possible.
+							Following the approach of the original authors, crop variety takes form in the 
+							configuration of a relatively small number of parameters.
+							The crops selected here, i.e. cereals, were chosen for our initial experiments 
+							and are not controlled by empirical data on ancient cultivars of the Indus River Basin. 
+							Instead, they represent archetypes of crops identified so far in the archaeological 
+							record which might had a significant role throughout the Mature Harappan. 
+							These crops were also selected to cover a range of meaningful parameter diversity 
+							within SIMPLE's definitions. 
+							Even though not calibrated, values are informed by crop modelling systems 
+							and crop-specific studies.
+							|
+							example of simulation run showing biomass growth and harvest of two of
+							the crops parametrised above.
+							========================================================================
+							Como ha visto en el diagrama, los modelos de clima y agua del suelo alimentan sus resultados directamente.
+  en el modelo de Cultivo, cuya función a su vez es calcular los rendimientos de uno o más tipos
+  de cultivos que crecen en condiciones específicas.
+  |
+  Con el propósito de representar prácticas de multicultivos,
+  Hemos elegido utilizar el modelo de cultivo SIMPLE,
+  lo que simplifica la dinámica del cultivo lo suficiente como para que podamos operar con múltiples cultivos,
+  sin la necesidad de tratar con múltiples modelos y una gran cantidad de parámetros.
+  El modelo de cultivo SIMPLE calcula la biomasa diaria en función de las etapas de crecimiento
+  definido en tiempo térmico y la modulación de la eficiencia de uso de la radiación por la temperatura,
+  concentraciones de dióxido de carbono y estrés hídrico.
+  |
+  Después de implementar este modelo en NetLogo, lo adaptamos a un esquema espacial donde es posible el multicultivo.
+  Siguiendo el enfoque de los autores originales, la variedad de cultivos toma forma en el
+  configuración de un número relativamente pequeño de parámetros.
+  Los cultivos seleccionados aquí, es decir, los cereales, fueron elegidos para nuestros experimentos iniciales.
+  y no están controlados por datos empíricos sobre cultivares antiguos de la cuenca del río Indo.
+  En cambio, representan arquetipos de cultivos identificados hasta ahora en el estudio arqueológico.
+  registro que podría haber tenido un papel importante en todo el Harappa maduro.
+  Estos cultivos también fueron seleccionados para cubrir una gama de diversidad de parámetros significativa.
+  dentro de las definiciones de SIMPLE.
+  Aunque no están calibrados, los valores se basan en sistemas de modelado de cultivos.
+  y estudios específicos de cultivos.
+  |
+  ejemplo de ejecución de simulación que muestra el crecimiento de biomasa y la cosecha de dos de
+  los cultivos parametrizados anteriormente.
+						</aside>
+					</section>
+
+					<section>
+						<h4><i style="color: slateblue">Crop</i> model | Yield & Seasonality</h4>
+						<img src="images/CropModelResultsMosaic_v2.png" alt="Crop model results - mosaic"
+							style="width: 750px; border: none; box-shadow: none"/>
+							<p style="font-size: 50%;">
+								<b style="color: slateblue">Crop</b> model outcome (using input from <b style="color: crimson;">Weather</b> and <b style="color: crimson;">Soil Water</b> models)
+							</p>
+						<aside class="notes">
+							Within the scope of Indus Village, parametrisation focused mainly on 
+							representing crops that differ in growing season and water stress sensitivity.
+							For rabi, we included wheat and barley, with medium sensitivity;
+							For zaid, proso millet, with low sensitivity; 
+							For kharif, rice and pearl millet, respectively with high and low sensitivity.
+							| 
+							One of the key roles of the Crop model is to mediate 
+							between the trajectory of ARID during the growing season of a crop and the yield produced.
+							By design, the relationship between ARID and yield is mediated by 
+							the crop's water sensitivity, and here you can see the implications of
+							choosing certain crops under highly variable year-round conditions.
+							Crops with higher water sensitivity (like rice) will only reach 
+							the majority of their potential yield if ARID is kept close to minimum 
+							and are more likely to fail in dry years.
+							======================================================================
+							En el ámbito de Indus Village, la parametrización se centró principalmente en
+  que representan cultivos que difieren en la temporada de crecimiento y la sensibilidad al estrés hídrico.
+  Para rabi incluimos trigo y cebada, con sensibilidad media;
+  Para zaid, mijo proso, de baja sensibilidad;
+  Para kharif, arroz y mijo perla, respectivamente con sensibilidad alta y baja.
+  |
+  Una de las funciones clave del modelo de cultivos es mediar
+  entre la trayectoria de ARID durante la temporada de crecimiento de un cultivo y el rendimiento producido.
+  Por diseño, la relación entre ARID y el rendimiento está mediada por
+  la sensibilidad del cultivo al agua, y aquí puedes ver las implicaciones de
+  elegir ciertos cultivos en condiciones muy variables durante todo el año.
+  Los cultivos con mayor sensibilidad al agua (como el arroz) sólo alcanzarán
+  la mayor parte de su rendimiento potencial si ARID se mantiene cerca del mínimo
+  y es más probable que fallen en años secos.
+						</aside>
+					</section>
+
+					<section>
+						<p style="font-size: 50%;">
+							
+						</p>
+						<div id="left50">
+							<img src="images/Fig6_terrains.png" alt="terrains"
+							style="width: 450px; border: none; box-shadow: none"/>
+						</div>
+						<div id="right50">
+							<p style="font-size: 50%;">
+								&leftarrow; &nbsp; &nbsp; sample of <b>terrains</b> (created with <b style="color: green;">Land</b> model)
+							</p>
+						<ul style="font-size: 60%;">
+							<li>
+								<b style="color: darkgoldenrod;">Land Water</b> + <b style="color: brown;">Crop</b> = <b style="color: crimson;">Land Crop</b>
+							</li>
+							<li class="fragment">
+								<b style="color: green;">Land</b> + <b style="color: royalblue;">Weather</b> + <b style="color: slateblue;">Soil Water</b> = <b style="color: darkgoldenrod;">Land Water</b><br> 
+								<b>river inflow</b>, <b>run-off</b> &amp; <b>inundation</b>
+							</li>
+							<br>
+							<li class="fragment">
+								Crops as <b>ecological components</b><br>
+								<i style="font-size: 70%;"><b style="color: blueviolet;">water (aquatic)</b> > 
+									<b style="color: orange; background-color: brown;">crops</b> > <b style="color: dodgerblue;">wood</b> >
+									<b style="color: green;">brush</b> > <b style="color: red;">grass</b> > 
+									bare soil</i>
+							</li>
+							<br>
+							<li class="fragment">
+								<b>Crop choice</b> and <b>management</b> variables<br>
+								<ul style="font-size: 80%;">
+									<li>crop <b style="color: crimson;">selection</b>: which crops to grow</li>
+									<li>cropping <b style="color: crimson;">intensity</b>:<br>% of land unit for all crops</li>
+									<li>crop <b style="color: crimson;">frequency</b>:<br>% of intensity for each crop</li>
+									<li>other: spacing, sowing/harvest dates</li>
+								</ul>
+							</li>
+						</ul>
+						</div>
+
+						<aside class="notes">
+							The Land Crop model comes as an integration of the Crop model with the Land Water model,
+							|
+							which in turn is an integration of the Land, Weather, and Soil Water models (that we will not cover here).
+							Suffice to know that the Land Water model introduces river water inflow and solves both
+							run-off and inundation exchanges between land units.
+							|
+							The integration of the Land Crop model was relatively straightforward.
+							The outputs of all former submodels feed directly into the required inputs of the Crop model,
+							and few adjustments are required.
+							|
+							All crops growing in a land unit are considered as an additional component 
+							forming the unit's ecological community. Within the scheme set in the Land Water model, 
+							expanding surface water continues to have preference over all other 
+							components. In turn, given its artificial nature, crop area has preference over all remaining 
+							components (i.e. through clearing, deforesting, and weeding).
+							| 
+							In absence of humans, crop choice and management are represented in the Land Crop model mainly as three variables, 
+							namely selection, intensity, and frequency. 
+							Selection is the list of crops to be simulated in land units.
+							Intensity is the percentage of the land unit area to be used by all crops selected, 
+							unless diminished by inundation. This has been kept constant at 50% throughout all experiments until now.
+							Frequency is a list containing the percentage of 
+							effective intensity (i.e. intensity minus any overlap with surface water) 
+							that is dedicated for each crop in selection.
+							The model also inherits other management aspects from the Crop model,
+							that for now were not systematically explored.
+							======================================================================
+							El modelo Land Crop surge como una integración del modelo Crop con el modelo Land Water,
+  |
+  que a su vez es una integración de los modelos de Tierra, Clima y Agua del Suelo (que no cubriremos aquí).
+  Basta saber que el modelo Land Water introduce el flujo de agua de los ríos y resuelve ambos
+  intercambios de escorrentía e inundaciones entre unidades de tierra.
+  |
+  La integración del modelo Land Crop fue relativamente sencilla.
+  Los resultados de todos los submodelos anteriores se alimentan directamente de los insumos requeridos del modelo de cultivo.
+  y se requieren pocos ajustes.
+  |
+  Todos los cultivos que crecen en una unidad de tierra se consideran un componente adicional.
+  formando la comunidad ecológica de la unidad. Dentro del esquema fijado en el modelo Land Water,
+  Las aguas superficiales en expansión siguen teniendo preferencia sobre todas las demás.
+  componentes. A su vez, dado su carácter artificial, la superficie de cultivo tiene preferencia sobre el resto
+  componentes (es decir, mediante la tala, la deforestación y el desmalezado).
+  |
+  En ausencia de humanos, la elección y el manejo de los cultivos se representan en el modelo de cultivos terrestres principalmente como tres variables:
+  a saber, selección, intensidad y frecuencia.
+  La selección es la lista de cultivos a simular en unidades de tierra.
+  La intensidad es el porcentaje de la superficie unitaria de tierra que utilizarán todos los cultivos seleccionados,
+  a menos que disminuya por inundación. Esto se ha mantenido constante en un 50 % a lo largo de todos los experimentos hasta ahora.
+  La frecuencia es una lista que contiene el porcentaje de
+  intensidad efectiva (es decir, intensidad menos cualquier superposición con el agua superficial)
+  que se dedica a cada cultivo en selección.
+  El modelo también hereda otros aspectos de gestión del modelo de Cultivos,
+  que por ahora no fueron explorados sistemáticamente.
+						</aside>
+					</section>
+
+					<section>
+						<h4><i style="color:slateblue">Land Crop</i> model | Results</h4>
+						<div id="left60">
+							<p style="font-size: 50%;">
+								Impact of <i style="color: royalblue;">flooding areas</i> dependent on water sensitivity
+							</p>
+							<img src="images/Fig7_exp3_ARIDComparison.png" alt="ARID comparison terrains"
+							style="width: 500px; border: none; box-shadow: none"/>
+							<img src="images/exp3_yieldPerTerrainCrop_river.png" alt="ARID comparison terrains"
+							style="width: 500px; border: none; box-shadow: none"/>
+						</div>
+						
+						<div id="right40">
+							<img src="images/exp3_yieldSpatialDistribution.png" alt="exp3 mean yield"
+							style="width: 450px; border: none; box-shadow: none"/>
+						</div>
+						
+
+						<aside class="notes">
+							In these examples, we can appretiate how most terrains will 
+							present effective borders between low and high yield areas,
+							which are generally associated with high and low ARID.
+							
+							Productivity distribution can be linked to all land unit properties,
+							but the key factor is clearly the hydrological structure, and consequently relief.
+							
+							You can see here that crops, 
+							which are constrained differently by ARID and other factors,
+							show different level of contrast between these areas. 
+							==========================================================
+							En estos ejemplos, podemos apreciar cómo la mayoría de los terrenos
+  presentar fronteras efectivas entre áreas de bajo y alto rendimiento,
+  que generalmente se asocian con ARID altas y bajas.
+
+  La distribución de la productividad puede vincularse a todas las propiedades de las unidades de tierra,
+  pero el factor clave es claramente la estructura hidrológica y, en consecuencia, el relieve.
+
+  Puedes ver aquí que los cultivos,
+  que se ven limitados de manera diferente por ARID y otros factores,
+  muestran diferentes niveles de contraste entre estas áreas.
+						</aside>
+					</section>
+
+					<section>
+						<h4><i style="color: slateblue">Land Crop</i> model | Results</h4>
+						<img src="images/exp5_corTotalYieldFreqSpatialDistribution.png" alt="exp3 mean yield"
+							style="width: 450px; border: none; box-shadow: none"/>
+						<div id="right40">
+							
+							<p style="font-size: 70%;">
+								<b>Experiment with <i style="color: crimson;">randomised</i> crop frequencies</b>
+							</p>
+							<p class="fragment" style="font-size: 50%;">
+								
+								(Local) <i style="color: forestgreen;">crop niche</i> gradient:<br>
+								correlation between 
+								<i style="color: gold;">land unit total yield</i> 
+								and 
+								<i style="color: violet;">frequency</i> of each crop.
+							</p>
+
+							<img class="fragment" src="images/Screenshot I1.png" alt="screenshot I1 detail"
+							style="width: 300px; border: none; box-shadow: none"/>
+						</div>
+
+						<aside class="notes">
+							Human agency is not explicitly modelled in this version, 
+							even though it is central to the broader Indus Village design. 
+							To approach crop management, 
+							we designed a experiment where frequency per crop is randomised at each land unit.
+							| 
+							This experiments aims at evidencing if and when there are
+							"crop niche gradients" that could be relevant for crop choice and
+							the overall resilience of food production.
+							We measured this by plotting for each land unit and terrain
+							the correlation between the land unit total yield and
+							the frequency of a crop. 
+							This means that when there is a positive correlation, 
+							the crop niche is stronger, and vice versa.
+							|
+							These results highlight the divide between thirsty and drought-resistant crops.
+							You can see here how rice and, to a lesser extent, wheat and barley concentrate 
+							their niches around flooding areas, while millets, especially proso millet, 
+							are moved further away to drier areas.
+							These results are promising for our goal with the IndusVillage,
+							since it shows the terms under which farming households need to decide 
+							on their cropping strategies and how those may change with land and weather conditions.
+							===========================================================
+							La agencia humana no está modelada explícitamente en esta versión,
+  a pesar de que es fundamental para el diseño más amplio de Indus Village.
+  Para abordar el manejo de cultivos,
+  Diseñamos un experimento donde la frecuencia por cultivo es aleatoria en cada unidad de tierra.
+  |
+  Este experimento tiene como objetivo evidenciar si y cuando hay
+  "gradientes de nicho de cultivo" que podrían ser relevantes para la elección de cultivos y
+  la resiliencia general de la producción de alimentos.
+  Medimos esto trazando para cada unidad de tierra y terreno.
+  la correlación entre el rendimiento total unitario de tierra y
+  La frecuencia de un cultivo.
+  Esto significa que cuando hay una correlación positiva,
+  el nicho de cultivo es más fuerte y viceversa.
+  |
+  Estos resultados resaltan la división entre cultivos sedientos y resistentes a la sequía.
+  Puedes ver aquí cómo se concentra el arroz y, en menor medida, el trigo y la cebada.
+  sus nichos alrededor de las zonas inundables, mientras que el mijo, especialmente el mijo proso,
+  se alejan hacia zonas más secas.
+  Estos resultados son prometedores para nuestro objetivo con IndusVillage,
+  ya que muestra los términos bajo los cuales los hogares agrícolas deben decidir
+  sobre sus estrategias de cultivo y cómo éstas pueden cambiar según las condiciones climáticas y de la tierra.
+						</aside>
+					</section>
+
+				</section>
+			
+				<section>
+					<section>
+						<h3 style="color: darkorange; font-size: 80%; text-align: left;">2. Indus Village model</h3>
+						<h3>2.3. Household Food Economy model</h3>
+					</section>
+
+					<section>
+						<div id="left60">
+							<a href="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/HouseholdFoodEconomy.png" target="_blank">
+								<img src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/HouseholdFoodEconomy.png?raw=true" alt="food economy infographic"
+								style="width: 800px; border: none; box-shadow: none"/>
+							</a>
+						</div>
+						
+						<div id="right40">
+							<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/diagrams/RoadMap_HouseholdFoodEconomy_2022-04.png" target="_blank">
+								<img src="https://github.com/Andros-Spica/indus-village-model/blob/master/diagrams/RoadMap_HouseholdFoodEconomy_2022-04.png?raw=true" alt="road map food economy"
+									style="width: 600px; border: none; box-shadow: none"/>
+							</a>
+						</div>
+
+						<p style="color: crimson;" class="fragment"><u>under construction</u></p>
+
+						<aside class="notes">
+							The model targets the food economy cycle defined as a sequence of processes
+							happening on a household scale, spanning from the obtention of foodstuffs 
+							to the disposition of labour and dietary preferences towards food production.
+							|
+							The Household Food Economy model integrates five submodels:
+							the Food Strategy, 
+							Food Storage, 
+							Food Exchange, 
+							Nutrition, and 
+							Household Demography models
+							=====================================================
+							El modelo apunta al ciclo de la economía alimentaria definido como una secuencia de procesos.
+  sucediendo a escala doméstica, abarcando desde la obtención de alimentos
+  a la disposición del trabajo y las preferencias dietéticas hacia la producción de alimentos.
+  |
+  El modelo de Economía Alimentaria de los Hogares integra cinco submodelos:
+  la estrategia alimentaria,
+  Almacenamiento de alimentos,
+  intercambio de alimentos,
+  Nutrición y
+  Modelos demográficos de los hogares
+						</aside>
+					</section>
+
+					<section>
+						<h4>Food Storage model</h4>
+						<a href="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/Storage model.png" target="_blank">
+							<img src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/Storage model.png?raw=true" alt="food economy infographic"
+							style="width: 800px; border: none; box-shadow: none"/>
+						</a>
+
+						<aside class="notes">
+							Households obtain a series of foodstuff amounts in different moments of the annual 
+							calendar through different processes modelled in other parts of the Indus Village,
+							particularly the Land Crop model. 
+							These amounts are accounted for as stocks of foodstuff that are stored, exchanged, 
+							and consumed.
+							Food consumption is calculated daily for the entire household based on its members, 
+							and assuming that households pursue the satisfaction of a diet. 
+							Diet is here a composition of foodstuff amounts 
+							and it is modelled as a cultural trait specific to households.
+							=============================================================
+							Los hogares obtienen una serie de cantidades de alimentos en diferentes momentos del año
+  calendario a través de diferentes procesos modelados en otras partes de la aldea del Indo,
+  particularmente el modelo de cultivos terrestres.
+  Estas cantidades se contabilizan como existencias de productos alimenticios que se almacenan, intercambian,
+  y consumido.
+  El consumo de alimentos se calcula diariamente para todo el hogar en función de sus miembros,
+  y suponiendo que los hogares persiguen la satisfacción de una dieta.
+  La dieta es aquí una composición de cantidades de alimentos.
+  y se modela como un rasgo cultural específico de los hogares.
+						</aside>
+					</section>
+
+					<section>
+						<h4>Food Storage model</h4>
+						<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/screenshots/06-storage%20interface.png" target="_blank">
+							<img src="https://github.com/Andros-Spica/indus-village-model/blob/master/screenshots/06-storage%20interface.png?raw=true" alt="screenshot storage"
+								style="border: none; box-shadow: none; margin-bottom: -3%;"/>
+						</a>
+						<br>
+						<i style="font-size: 50%">
+						<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/06-storage-model" target="_blank">
+							Link to code (repository)
+						</a> | documentation under development
+						</i>
+					</section>
+
+					<section>
+						<h4>Food Exchange model</h4>
+						
+						<a href="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/Exchange model.png" target="_blank">
+							<img src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/Exchange model.png?raw=true" alt="food economy infographic"
+							style="width: 800px; border: none; box-shadow: none"/>
+						</a>
+
+						<aside class="notes">
+							Households can also engage on food exchange, as "sellers", 
+							if having surplus, or "buyers", if having shortage.
+							After each stock-sized transaction is made, they may complement their diet,
+							if lacking in the first place.
+							There are still open questions regarding the terms of exchange transactions.
+							As a preliminary approach, we are distinguishing local exchange as being
+							based on open reciprocity or based on a voluntary redistribution institution.
+							In the long term, we are interested in how other, possibly overlapping, exchange systems
+							such as market-like economies affected the local food economy. 
+							==========================================================================
+							Los hogares también pueden participar en el intercambio de alimentos, como "vendedores",
+  si hay excedente, o "compradores", si hay escasez.
+  Después de realizar cada transacción de acciones, pueden complementar su dieta,
+  si falta en primer lugar.
+  Todavía quedan preguntas abiertas sobre las condiciones de las transacciones de cambio.
+  Como enfoque preliminar, distinguimos el intercambio local como
+  basado en una reciprocidad abierta o basado en una institución de redistribución voluntaria.
+  A largo plazo, nos interesa saber cómo otros sistemas de intercambio, posiblemente superpuestos,
+  como las economías de mercado afectaron la economía alimentaria local.
+						</aside>
+					</section>
+
+					<section>
+						<h4>Food Exchange model</h4>
+						<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/screenshots/06-storage%20interface_withExchange.png" target="_blank">
+							<img src="https://github.com/Andros-Spica/indus-village-model/blob/master/screenshots/06-storage%20interface_withExchange.png?raw=true" alt="screenshot exchange"
+								style="border: none; box-shadow: none; margin-bottom: -3%;"/>
+						</a>
+						<br>
+						<i style="font-size: 50%">
+						<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/06-storage-model" target="_blank">
+							Link to code (repository)
+						</a> | documentation under development
+						</i>
+					</section>
+
+					<section class="fragments">
+						
+						<h4>Nutrition model</h4>
+						
+						<a href="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/Nutrition model.png" target="_blank">
+							<img src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/Nutrition model.png?raw=true" alt="food economy infographic"
+							style="width: 800px; border: none; box-shadow: none"/>
+						</a>
+
+						<aside class="notes">
+							The food effectively consumed is translated 
+				   			into nutrient amounts, and distributed among household members. Nutrient amounts are 
+				   			compared to the members' specific sex-age requirements, producing a household-level 
+				   			nutrition score. 
+							============================================
+							Los alimentos efectivamente consumidos se traducen
+  en cantidades de nutrientes y distribuidos entre los miembros del hogar. Las cantidades de nutrientes son
+  en comparación con los requisitos específicos de sexo y edad de los miembros, produciendo un nivel de hogar
+  puntuación nutricional.
+						</aside>
+					</section>
+
+					<section>
+						<a href="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/nutritionTablesSneakPeak.png" target="_blank">
+							<img src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/nutritionTablesSneakPeak.png?raw=true" alt="food economy infographic"
+							style="width: 800px; border: none; box-shadow: none"/>
+						</a>
+					</section>
+
+					<section>
+						<h4>Nutrition model</h4>
+						<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/screenshots/07-nutrition%20interface.png" target="_blank">
+							<img src="https://github.com/Andros-Spica/indus-village-model/blob/master/screenshots/07-nutrition%20interface.png?raw=true" alt="screenshot exchange"
+								style="border: none; box-shadow: none; margin-bottom: -3%;"/>
+						</a>
+						<br>
+						<i style="font-size: 50%">
+						<a href="https://github.com/Andros-Spica/indus-village-model/blob/master/07-nutrition-model" target="_blank">
+							Link to code (repository)
+						</a>
+						</i>
+					</section>
+
+					<section class="fragments">
+						
+						
+						<div id="left50">
+							<h3>Household Demography model</h3>
+
+							<a href="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/householdDemography_structure.png" target="_blank">
+								<img src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/householdDemography_structure.png?raw=true" alt="household demography structure infographic"
+								style="width: 500px; border: none; box-shadow: none"/>
+							</a>
+						</div>
+
+						<div id="right50">
+							<a href="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/demographySubmodels.png" target="_blank">
+								<img src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/demographySubmodels.png?raw=true" alt="household demography structure infographic"
+								style="width: 500px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+							</a>
+							<p style="font-size: 50%;">
+								Fertility & Nuptiality: <a href="https://www.jstor.org/stable/26347932">Peristeva & Kostaki 2007</a>; <a href="http://dx.doi.org/10.25336/P6TK56">2015</a>
+								<br>
+								Mortality: Coale, Demeny, & Vaughan 1983 | Jones 2007, <a href="https://cran.r-project.org/package=demogR">demogR</a> package
+							</p>
+						</div>
+						
+
+						<aside class="notes">
+							Next, the nutrition score is used to condition the dynamics of a individual-based demographic simulation,
+							the Household Demography model. 
+							The Household Demography model relies on a simplified representation of 
+							individual household members, however keeping track of individual properties, 
+							particularly sex and age.
+							This approach also allows us to hold information of life stories that are key to
+							model realistically social relationships within and among households.
+							|
+							The Household Demography model is in fact composed by three separate equation-based submodels, 
+							the Fertility, Nuptiality and Mortality models,
+							which output the probability of an individual, respectively, to give birth (female), 
+							form a stable couple, or die, depending on their sex and age.
+							================================================
+							A continuación, la puntuación de nutrición se utiliza para condicionar la dinámica de una simulación demográfica individual,
+  el modelo de Demografía de Hogares.
+  El modelo de Demografía de los Hogares se basa en una representación simplificada de
+  miembros individuales del hogar, sin embargo, manteniendo un registro de las propiedades individuales,
+  particularmente el sexo y la edad.
+  Este enfoque también nos permite conservar información de historias de vida que son clave para
+  modelar de manera realista las relaciones sociales dentro y entre los hogares.
+  |
+  De hecho, el modelo de Demografía de los Hogares está compuesto por tres submodelos separados basados ​​en ecuaciones,
+  los modelos de Fecundidad, Nupcialidad y Mortalidad,
+  que genera la probabilidad de que un individuo, respectivamente, dé a luz (mujer),
+  formar una pareja estable, o morir, dependiendo de su sexo y edad.
+						</aside>
+					</section>
+
+					<section class="fragments">
+						<h4>Household growth and formation</h4>
+						<a href="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/householdDemography_coupleFormation.png" target="_blank">
+							<img src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/householdDemography_coupleFormation.png?raw=true" alt="household growht and formation infographics"
+							style="width: 800px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+						</a>
+
+						<aside class="notes">
+							
+						</aside>
+					</section>
+
+					<section>
+						
+						<div class="r-stack">
+							<img src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/householdDemography v.1.3 - daily time step interface_growth.png?raw=true" alt="screenshot exchange"
+								style="border: none; box-shadow: none; margin-bottom: -5%;"/>
+							<img class="fragment" src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/householdDemography v.1.3 - daily time step interface_extinction.png?raw=true" alt="screenshot exchange"
+								style="border: none; box-shadow: none; margin-bottom: -5%;"/>
+							<img class="fragment" src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/householdDemography v.1.3 - daily time step interface_bootleneckExtinction.png?raw=true" alt="screenshot exchange"
+								style="border: none; box-shadow: none; margin-bottom: -5%;"/>
+							<img class="fragment" src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/householdDemography v.1.3 - daily time step interface_growthCycles.png?raw=true" alt="screenshot exchange"
+								style="border: none; box-shadow: none; margin-bottom: -5%;"/>
+						</div>
+						<br>
+						<i style="font-size: 50%">
+							<a href="https://github.com/Andros-Spica/indus-village-model/tree/master/05-household-demography" target="_blank">
+								Link to code (repository)
+							</a>
+						</i>
+					</section>
+
+					<section class="fragments">
+						<h4>Effect of nutrition over mortality</h4>
+
+						<a href="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/HouseholdDemography_code_get-net-mortality-of-day.png" target="_blank">
+							<img src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/HouseholdDemography_code_get-net-mortality-of-day.png?raw=true" alt="household growht and formation infographics"
+							style="width: 700px; border: none; box-shadow: none; margin-bottom: -3%;"/>
+						</a>
+
+						<p style="font-size: 50%;">
+							<a href="https://github.com/Andros-Spica/indus-village-model/tree/master/07-nutrition-model/documentation" target="_blank">
+								Calculation of Nutrition score (diagram)
+							</a>
+						</p>
+
+						<aside class="notes">
+							The household's nutrition score modulates the mortality model,
+							increasing or decreasing the reference probability of dying per each sex-age category.
+							|
+							The nutrition score is used to condition the outcome of the mortality submodel 
+							following an algorithmic approach (which is a preliminary solution) where a negative score will increase
+							linearly the probability of dying while a positive score will decrease 
+							it with diminishing intensity.
+							===================================================================
+							La puntuación nutricional del hogar modula el modelo de mortalidad,
+  aumentando o disminuyendo la probabilidad de referencia de morir por cada categoría de sexo y edad.
+  |
+  La puntuación de nutrición se utiliza para condicionar el resultado del submodelo de mortalidad.
+  siguiendo un enfoque algorítmico (que es una solución preliminar) donde una puntuación negativa aumentará
+  linealmente la probabilidad de morir mientras que una puntuación positiva disminuirá
+  con intensidad decreciente.
+						</aside>
+					</section>
+
+					<section>
+						<h4>Food Strategy model</h4>
+						
+						<div id="left70">
+							<a href="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/Food Strategy model.png" target="_blank">
+								<img src="https://github.com/Andros-Spica/CAA-Angourakis-et-al-2022/blob/main/images/Food Strategy model.png?raw=true" alt="food strategy infographic"
+								style="width: 800px; border: none; box-shadow: none"/>
+							</a>
+						</div>
+						
+						<div id="right30" style="font-size: 50%;">
+							
+							<ul>
+								<li>reinforced learning</li>
+								<li>stimulus for change as degree of diet shortages</li>
+								<li>food strategy &rightarrow; triplet use/activity, conditions, investment</li>
+								<li>challenge: multidimensional state space, tryouts with high stakes</li>
+							</ul>
+							<p style="font-size: 120%; color: crimson;" class="fragment">
+								code and documentation under development
+							</p>
+						</div>
+						
+						<aside class="notes">
+							To close the food economy cycle, the Food Strategy model determines how 
+							households apply a learning algorithm to steer their food production strategy, specifically 
+				   			regarding which activities to invest labour in, considering diet 
+							satisfaction as the fundamental target.
+							===================================================
+							Para cerrar el ciclo de la economía alimentaria, el modelo de Estrategia Alimentaria determina cómo
+  Los hogares aplican un algoritmo de aprendizaje para orientar su estrategia de producción de alimentos, específicamente
+  sobre en qué actividades invertir mano de obra, considerando la dieta
+  la satisfacción como objetivo fundamental.
+						</aside>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h3 style="color: darkorange; text-align: left;">3. Discussion</h3>
+					</section>
+					
+					<section class="fragments">
+						<h3>Crop choice dilemma</h3>
+						<p style="font-size: 50%;">
+							which crops to grow in a <b>land unit</b>, given the mandate of producing <b>a certain amount of yield</b><br>
+							from a speciﬁc <b>set of crops</b> with <b>diverse characteristics</b>
+						</p>
+						<ul style="font-size: 80%;">
+							<li class="fragment">Crop <b style="color: crimson">selection</b> &amp; <b style="color: forestgreen">diversity</b></li>
+							<li class="fragment">Limited <b style="color: dodgerblue">means of production</b> and <b style="color: dodgerblue">workforce</b></li>
+							<li>
+								Condition vary:
+								<ul>
+									<li class="fragment">Local &amp; regional <b style="color: orange">environmental diversity</b></li>
+									<li class="fragment"><b style="color:violet">Seasonality</b> &amp; <b style="color: slateblue">Climate change</b></li>
+								</ul>
+							</li>
+							<li class="fragment">No single optimal <i style="color: crimson;">solution</i></li>
+						</ul>
+							
+						<aside class="notes">
+							The Land Crop model and the results obtained so far help us define a management dilemma 
+							that will have a key role in the broader Indus Village model. Such dilemma
+							(hereafter referred to as crop choice dilemma) is to be encountered by 
+							each farming agent when choosing which crops to grow in a land unit, 
+							given the mandate of producing a certain amount of yield from a speciﬁc 
+							set of crops with diverse characteristics.
+							|
+							(Crop selection and diversity). There are a number of crops to be produced 
+							that are both available and required by society, given a broader
+							economic and cultural context, and these are diverse as per their intrinsic
+							biological traits, affecting important aspects of its cultivation.
+							|
+							(Limited means of production and workforce). Farming agents count with
+							a limited amount of land, labour, and other resources to be invested
+							in growing crops at any given time.
+							|
+							(Seasonality and climate variability). Weather is highly variable within a year,
+							with precipitation concentrating in seasons (two rainy seasons, two dry seasons),
+							while there is a high inter-annual variation in weather, with great differences
+							in the amount and distribution of precipitation between consecutive years.
+							|
+							(Local and regional environmental diversity). Inundation areas represent a 
+							special type of local environment, offering privileged crop growing conditions
+							with low-to-none water stress.
+							|
+							The conditions shaping weather (seasonality and climate-driven variability), 
+							relief, soil properties, and ecology vary greatly between localities 
+							within the same cultural region, confronting the same cultural 
+							substratum to many potential contexts for the crop choice dilemma.
+							|
+							all in all, it presents a dilemma to be solved iteratively, given that there is no single optimal solution
+							=================================================================
+							El modelo Land Crop y los resultados obtenidos hasta el momento nos ayudan a definir un dilema de gestión
+  que tendrá un papel clave en el modelo más amplio de Indus Village. Tal dilema
+  (en adelante denominado dilema de elección de cultivos) debe ser enfrentado por
+  cada agente agrícola al elegir qué cultivos cultivar en una unidad de tierra,
+  dado el mandato de producir una cierta cantidad de rendimiento a partir de un
+  conjunto de cultivos con diversas características.
+  |
+  (Selección y diversidad de cultivos). Hay una serie de cultivos que se producirán.
+  que están disponibles y son requeridos por la sociedad, dada una perspectiva más amplia.
+  contexto económico y cultural, y estos son diversos según sus características intrínsecas.
+  rasgos biológicos, afectando aspectos importantes de su cultivo.
+  |
+  (Medios de producción y mano de obra limitados). Los agentes agrícolas cuentan con
+  una cantidad limitada de tierra, mano de obra y otros recursos para invertir
+  en los cultivos en crecimiento en un momento dado.
+  |
+  (Estacionalidad y variabilidad climática). El clima es muy variable dentro de un año,
+  con precipitaciones concentrándose en estaciones (dos estaciones lluviosas, dos estaciones secas),
+  mientras que existe una alta variación interanual en el clima, con grandes diferencias
+  en la cantidad y distribución de la precipitación entre años consecutivos.
+  |
+  (Diversidad ambiental local y regional). Las áreas de inundación representan un
+  tipo especial de entorno local, que ofrece condiciones privilegiadas para el cultivo de cultivos
+  con estrés hídrico bajo o nulo.
+  |
+  Las condiciones que configuran el clima (estacionalidad y variabilidad impulsada por el clima),
+  El relieve, las propiedades del suelo y la ecología varían mucho entre localidades.
+  dentro de la misma región cultural, enfrentando las mismas diferencias culturales.
+  sustrato para muchos contextos potenciales para el dilema de la elección del cultivo.
+  |
+  En definitiva, presenta un dilema que debe resolverse de forma iterativa, dado que no existe una única solución óptima.
+						</aside>
+					</section>
+	
+					<section class="fragments">
+						<h3>crop choice dilemma</h3>
+
+						<div id="left40" class="fragment" style="text-align: center;">
+							<h4>risk</h4>
+							<div style="background-color: aliceblue; color: black; border-radius: 10%;">
+								Water stress sensitivity:
+								<ul style="font-size: 50%;">
+									<li><b style="color: crimson">high-risk</b> ("thirsty") vs<br><b style="color: crimson">low-risk</b> ("drought-resistant")</li>
+									<li class="fragment">Why choose high-risk crops at all?</li>
+									<li class="fragment">condition A: <b style="color: dodgerblue">crop value</b> outweights the risk (e.g. cash crop)</li>
+									<li class="fragment">condition B: risk can be <i style="color:violet">mitigated</i></li>
+								</ul>
+							</div>
+						</div>
+
+						<div id="right40" class="fragment" style=" text-align: center;">
+							<h4>risk-mitigation</h4>
+							<div style="background-color: aliceblue; color: black; border-radius: 10%;">
+								Strategies:
+								<ul style="font-size: 50%;">
+									<li class="fragment"><b style="color: slateblue">hydrophile</b>: keep the water flowing<br>
+										&rightarrow; <i style="color: crimson">minimise</i> the risk of high-risk crops
+									</li>
+									<li class="fragment"><b style="color: orange">polyphile</b>: keep it (agro)diverse<br>
+										&rightarrow; <i style="color: crimson">compensate</i> the risk of high-risk crops
+									</li>
+									<li class="fragment">To be often combined locally,<br>also with other agronomic and economic strategies</li>
+								</ul>
+							</div>
+							<p style="font-size: 50%;">
+								See more at
+								<a title="Angourakis A et al. 2022. Quaternary" 
+									href="https://www.mdpi.com/2571-550X/5/2/25" target="_blank">
+									Angourakis et al. 2022
+								</a>
+							</p>
+						</div>
+							
+						<aside class="notes">
+							Within the scope of our approach, sensitivity to soil water stress is 
+							the intrinsic factor driving most of the variability in productivity and 
+							thus determining the risk that investing in it entails.
+							Solely according to this parameter, we are able 
+							to rank crops from low to high-risk (millets to winter cereals to rice),
+							and correlate it with their yields under a wide variety of conditions. 
+							In light of our results, low-risk crops are either more predictable (pearl millet) 
+							or sustainably productive (proso millet) under virtually any regime of water 
+							availability offered in our experiments.
+							In contrast, high-risk crops like rice, and in less measure winter cereals, 
+							offer either low or inconsistent yields depending on if there is a systemic 
+							lack of water (i.e. low average annual precipitation, dry seasons, dry areas) 
+							or more temporary, unpredictable drying conditions.
+							| 
+							Still, a question remains:
+							Why do farmers grow more sensitive/high risk crops
+							(presumibly, as the IC farmers did)?
+							|
+							The risk associated with a crop is weighted by farmers not only in relation 
+							to the sheer amount of biomass harvested, but also to its value per capita 
+							for consumption and exchange as well as cultural reasons.
+							One extreme scenario is where entire regions specialise in the production 
+							of one or few highly valued crops (cash crops), and obtain through trade 
+							all other goods required by its economy.
+							|
+							Another side of the risk equation is that the risk itself can be reduced, 
+							to a point in which an otherwise risky crop can be safely cultivated, 
+							even if its value is not particularly high.
+							|
+							Probably the most intuitive measure to minimise soil water stress in 
+							agriculture is to make more water available to crops. This hydrophile 
+							strategy can be performed by either sowing crops selectively in well-watered 
+							areas or mobilising water into drier land.
+							|
+							Another, more holistic strategy to cope with risk is to spread the investment 
+							into multiple crops, environments, and agricultural land use practices. 
+							By improving and maintaining agrodiversity the farming agent can buffer 
+							the ﬂuctuations in yield of individual crops while also safeguarding the 
+							future productivity of the entire food economy.
+							The polyphile strategy is not embraced as a form of optimising agricultural 
+							production in a given year, but as a way to safeguard enough production
+							under inescapable uncertainties.
+							|
+							Although potentially leading to opposite practices,
+							the hydrophile and polyphile risk mitigation strategies can be combined locally, 
+							either as household or village-wide traditions.
+							A composite approach will give a different weight to each of these strategies, 
+							and would often include multiple rules-of-thumb speciﬁc to certain crops under 
+							certain conditions.
+							Additionally, farmers can incorporate speciﬁc practices that reduce the overall 
+							risk by addressing other hazards, such as the use of manure and complementary 
+							crops (e.g., legumes) to replenish soil fertility.
+							Other more general risk mitigation strategies can also be added to the mix, 
+							such as common pooling, planning for a fallback surplus, or improving long-term 
+							storage infrastructure.
+							========================================================================
+							Dentro del alcance de nuestro enfoque, la sensibilidad al estrés hídrico del suelo es
+  el factor intrínseco que impulsa la mayor parte de la variabilidad en la productividad y
+  determinando así el riesgo que conlleva invertir en el mismo.
+  Únicamente según este parámetro podemos
+  clasificar los cultivos de bajo a alto riesgo (mijo, cereales de invierno y arroz),
+  y correlacionarlo con sus rendimientos en una amplia variedad de condiciones.
+  A la luz de nuestros resultados, los cultivos de bajo riesgo son más predecibles (mijo perla)
+  o sosteniblemente productivo (mijo proso) bajo prácticamente cualquier régimen de agua
+  disponibilidad ofrecida en nuestros experimentos.
+  En cambio, los cultivos de alto riesgo, como el arroz y, en menor medida, los cereales de invierno,
+  ofrecen rendimientos bajos o inconsistentes dependiendo de si hay un problema sistémico
+  falta de agua (es decir, precipitación media anual baja, estaciones secas, zonas secas)
+  o condiciones de secado más temporales e impredecibles.
+  |
+  Aún así, queda una pregunta:
+  ¿Por qué los agricultores cultivan cultivos más sensibles o de alto riesgo?
+  (presumiblemente, como hicieron los agricultores de CI)?
+  |
+  Los agricultores ponderan el riesgo asociado a un cultivo no sólo en relación
+  a la gran cantidad de biomasa cosechada, sino también a su valor per cápita
+  tanto por motivos de consumo e intercambio como por motivos culturales.
+  Un escenario extremo es que regiones enteras se especialicen en la producción
+  de uno o pocos cultivos de alto valor (cultivos comerciales) y obtenerlos a través del comercio
+  todos los demás bienes que requiere su economía.
+  |
+  Otro lado de la ecuación del riesgo es que el riesgo en sí puede reducirse,
+  hasta un punto en el que un cultivo que de otro modo sería riesgoso pueda cultivarse con seguridad,
+  incluso si su valor no es particularmente alto.
+  |
+  Probablemente la medida más intuitiva para minimizar el estrés hídrico del suelo en
+  La agricultura es poner más agua a disposición de los cultivos. Este hidrófilo
+  La estrategia se puede realizar sembrando cultivos selectivamente en lugares bien regados.
+  áreas o movilizar agua hacia tierras más secas.
+  |
+  Otra estrategia más holística para afrontar el riesgo es distribuir la inversión
+  en múltiples cultivos, entornos y prácticas de uso de la tierra agrícola.
+  Al mejorar y mantener la agrodiversidad, el agente agrícola puede amortiguar
+  las fluctuaciones en el rendimiento de los cultivos individuales y, al mismo tiempo, salvaguardar la
+  productividad futura de toda la economía alimentaria.
+  La estrategia polifílica no se adopta como una forma de optimizar la agricultura
+  producción en un año determinado, sino como una forma de salvaguardar suficiente producción
+  bajo incertidumbres ineludibles.
+  |
+  Aunque potencialmente conduzca a prácticas opuestas,
+  las estrategias de mitigación del riesgo de hidrófilos y polífilos se pueden combinar localmente,
+  ya sea como tradiciones domésticas o de toda la aldea.
+  Un enfoque compuesto dará un peso diferente a cada una de estas estrategias,
+  y a menudo incluiría múltiples reglas generales específicas para ciertos cultivos bajo
+  ciertas condiciones.
+  Además, los agricultores pueden incorporar prácticas específicas que reduzcan el impacto general.
+  riesgo abordando otros peligros, como el uso de estiércol y productos complementarios.
+  cultivos (por ejemplo, leguminosas) para reponer la fertilidad del suelo.
+  También se pueden agregar a la mezcla otras estrategias más generales de mitigación de riesgos,
+  como la puesta en común, la planificación de un superávit de reserva o la mejora de los recursos a largo plazo.
+  infraestructura de almacenamiento.
+						</aside>
+					</section>
+
+					<section>
+						<p>
+							But how should <b style="color: darkorange;">households</b> in "peri-urban" hinterlands, such as those of the Indus Civilisation,<br><b style="color: crimson;">solve this crop dilemma</b>? 
+						</p>
+						<div class="fragment">
+							<p>
+								There is no <b style="color: royalblue;">"economic sphere"</b> in isolation
+							</p>
+							<p style="font-size: 50%;">
+								sensu Marshall Sahlings, Karl Polanyi
+							</p>
+						</div>
+
+						<aside class="notes">
+							But how should households in "peri-urban" hinterlands, such as those of the Indus Civilisation, solve this crop dilemma?
+							To better understand the relationship between climate-driven food crisis and household behaviours,
+							we look back at the perspective set by Marshall Sahlings, who in turn takes from Karl Polanyi.
+							They postulate, there is no trully isolated "economic sphere", especially not in prehistory.
+							==================================================
+							Pero, ¿cómo deberían los hogares de zonas "periurbanas" del interior, como las de la civilización del Indo, resolver este dilema de los cultivos?
+  							Para comprender mejor la relación entre la crisis alimentaria provocada por el clima y los comportamientos de los hogares,
+  							Volvemos a mirar la perspectiva establecida por Marshall Sahlings, quien a su vez toma de Karl Polanyi.
+  							Postulan que no existe una "esfera económica" verdaderamente aislada, especialmente en la prehistoria.
+						</aside>
+					</section>
+
+					<section>
+						
+
+						<div id="left40">
+
+							<h4><i style="color: darkorange;">Domestic Mode of Production</i></h4>
+
+							<ul style="font-size: 50%;">
+								<li><i style="color: royalblue;">Pooling</i> of labour/resources for production/consumption</li>
+								<li>Production <u style="color: maroon;">for use value</u>:<br>
+									limited necessities, limited production effort, aggregate underproduction
+								</li>
+								<li>Cohesive decision-making</li>
+								<li>Household <b style="color: slateblue;">autonomy</b><br>&rarr; interhousehold <b style="color: orange;">anarchy</b></li>
+								<li>Full independence, self-sufficiency<br>(theoretical state)</li>
+							</ul>
+							<figure>
+								<img src="images/Chayanov Slope.png" alt="Chayanov's slope"
+									style="width: 600px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+									<figcaption>
+										<p style="font-size: 33%;">
+											mod. from Sahlins 1972. Stone Age Economics, Fig. 3.1
+										</p>
+									</figcaption>
+							</figure>
+							
+							<p style="font-size: 80%;">
+								work, but don't overwork
+							</p>
+						</div>
+
+						<div id="right60">
+							<div class="r-stack">
+								<img src="images/1_DMP_no pool.png" alt="domestic exchanges"
+								style="width: 500px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+								<img class="fragment" src="images/1_DMP.png" alt="domestic pool"
+								style="width: 500px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+							</div>
+						</div>
+
+						<aside class="notes">
+							Revisinting the concept of Domestic Mode of Production,
+							we can understand exchange from its fundamental logic, as it occurs between members of a household.
+							Household being the human atomic unit of pooiling labour and resources for sharing production and consumption
+							in a rather egalitarian manner.
+							Within such unit, the production priority is the use value of things, that is activities are ultimately
+							limited by the foreseeable necessities of its members.
+							This mode of production describes a state where households are fully independent and self-sufficient,
+							which, of course, is a state that was never observed empirically. It's value is strictly theoretical, as a null hypothesis of sorts.
+							(Comment Chayanov's slope)
+							=========================================================
+							Revisando el concepto de Modo de Producción Doméstico,
+  Podemos entender el intercambio desde su lógica fundamental, tal como ocurre entre los miembros de un hogar.
+  El hogar es la unidad atómica humana que reúne mano de obra y recursos para compartir la producción y el consumo.
+  de una manera bastante igualitaria.
+  Dentro de dicha unidad, la prioridad de producción es el valor de uso de las cosas, es decir, las actividades son en última instancia
+  limitada por las necesidades previsibles de sus miembros.
+  Este modo de producción describe un estado en el que los hogares son totalmente independientes y autosuficientes,
+  lo cual, por supuesto, es un estado que nunca se observó empíricamente. Su valor es estrictamente teórico, como una especie de hipótesis nula.
+  (Comentar la pendiente de Chayanov)
+						</aside>
+
+					</section>
+
+					<section>
+						
+						<div id="left60">
+							<div class="r-stack">
+								<img src="images/2-1_spheres of reciprocity_lineage.png" alt="domestic exchanges"
+								style="width: 600px; border: none; box-shadow: none; margin-bottom: 0%;"/>
+								<img class="fragment" src="images/2-2_spheres of reciprocity_village.png" alt="domestic pool"
+								style="width: 600px; border: none; box-shadow: none; margin-bottom: 0%;"/>
+								<img class="fragment" src="images/2-3_spheres of reciprocity_tribe.png" alt="domestic pool"
+								style="width: 600px; border: none; box-shadow: none; margin-bottom: 0%;"/>
+								<img class="fragment" src="images/2-4_spheres of reciprocity_polity.png" alt="domestic pool"
+								style="width: 600px; border: none; box-shadow: none; margin-bottom: 0%;"/>
+							</div>
+							
+							<ul style="font-size: 50%;">
+								<li>Increasing production for exchange (intensification)</li>
+								<li>
+									<b style="color: darkorange;">overproduction</b> from household perspective<br>&rarr; deviation from Chayanov's slope
+								</li>
+								<li><b style="color: slateblue;">Social complexity</b> both as requirer and enabler</li>
+							</ul>
+						</div>
+
+						<div id="right40">
+							<h4>Exchange as reciprocity</h4>
+							<ul style="font-size: 50%;">
+								<li>Strong rule of <b style="color: crimson;">kinship</b></li>
+								<li>Generalised, balanced and negative types</li>
+								<li>Most regular exchanges entail <b style="color: royalblue;">pooling</b></li>
+								<li>Tensions between production for use and production for exchange<br>(self-interest vs. moral obligations to kin)</li>
+							</ul>
+							
+							<figure>
+								<img src="images/Chayanov Slope_deviation.png" alt="Chayanov's slope"
+									style="width: 600px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+									<figcaption>
+										<p style="font-size: 33%;">
+											mod. from Sahlins 1972. Stone Age Economics, Fig. 3.2
+										</p>
+									</figcaption>
+							</figure>
+							<p style="font-size: 80%;">
+								keep working,<br>no matter what
+							</p>
+						</div>
+
+						<aside class="notes">
+							This state gets perturbed once we consider that every individual within a household will be inevitably linked to the outside through kinship.
+							Exchange is then strongly influenced by the shape of kinship networks.
+							Since exchange regularity involves some level of pooling, households start being pressed to always overproduce, to at least compasate 
+							the potential unbalanced towards the most needy parts of the family.
+							This can be considered as a first tier of intensification, to which social complexity is both cause and consequence.
+							======================================
+							Este estado se perturba cuando consideramos que cada individuo dentro de un hogar estará inevitablemente vinculado al exterior a través del parentesco.
+  Entonces, el intercambio está fuertemente influenciado por la forma de las redes de parentesco.
+  Dado que la regularidad del intercambio implica cierto nivel de mancomunación, los hogares comienzan a verse presionados a producir siempre en exceso, al menos para compararse.
+  el potencial desequilibrado hacia los sectores más necesitados de la familia.
+  Esto puede considerarse como un primer nivel de intensificación, del cual la complejidad social es a la vez causa y consecuencia.
+						</aside>
+
+					</section>
+					
+					<section>
+
+						<div id="left60">
+							<div class="r-stack">
+								<img src="images/2-4_spheres of reciprocity_polity.png" alt="domestic exchanges"
+								style="width: 600px; border: none; box-shadow: none; margin-bottom: 0%;"/>
+							</div>
+							
+							<ul style="font-size: 50%;">
+								<li><b style="color: crimson;">Production decline</b> may render pooling shares less barable</li>
+								<li>Unbalanced exchange is perceived as <b style="color:slateblue">exploitation</b></li>
+								<li>Negative reciprocity (exploitation) <b style="color: darkorange;">weakens leadership</b></li>
+								<li>Leadership needed for a <b style="color: blueviolet;">"production for exchange" economy</b>?</li>
+							</ul>
+							<p style="font-size: 80%;">
+								work makes you better, so do it more 
+							</p>
+						</div>
+
+						<div id="right40">
+							<h4>Urban integration</h4>
+
+							<ul style="font-size: 50%;">
+								<li><b style="color: crimson;">Pooling challenges</b> increase with scale</li>
+								<li>Households handling (recurrently) extra costs of exchanges</li>
+								<li><b style="color: royalblue;">Leaders</b> (decision-makers, negotiators)<br>encourage pooling and domestic overproduction</li>
+								<li>Kinship displaced by ideology, authority and coercion in <b style="color:greenyellow">larger exchange networks</b></li>
+							</ul>
+							
+							<figure>
+								<img src="images/Chayanov Slope_deviation2.png" alt="Chayanov's slope"
+									style="width: 600px; border: none; box-shadow: none; margin-bottom: -5%;"/>
+									<figcaption>
+										<p style="font-size: 33%;">
+											mod. from Sahlins 1972. Stone Age Economics, Fig. 3.3
+										</p>
+									</figcaption>
+							</figure>
+						</div>
+
+						<aside class="notes">
+							As social complexity builds up in scale, pooling challenges starts to make a larger dent.
+							Those challenges, though various, all generate extra costs for households.
+							The role of leadership evolves here mostly to organise and encourage pooling and overproduction,
+							while the moral obligation of kinship starts to lose terrain to other forms of "convincing".
+							|
+							When there is a production decline, household pooling shares might become less barable, if not untolerable.
+							Once exchange situations are perceived as exploitation, that is "negative reciprocity" exchanges,
+							the pull of leadership weakens.
+							Which begs the question, up to which point is leadership a requirement for a "production for exchange" economy?
+							==============================================
+							A medida que la complejidad social aumenta en escala, la agrupación de desafíos comienza a tener un impacto mayor.
+  Esos desafíos, aunque diversos, generan costos adicionales para los hogares.
+  El papel del liderazgo evoluciona aquí principalmente para organizar y fomentar la mancomunación y la sobreproducción,
+  mientras que la obligación moral del parentesco comienza a perder terreno frente a otras formas de "convencer".
+  |
+  Cuando hay una disminución de la producción, las participaciones en la mancomunación de los hogares podrían volverse menos tolerables, si no intolerables.
+  Una vez que las situaciones de intercambio se perciben como explotación, es decir, intercambios de "reciprocidad negativa",
+  la influencia del liderazgo se debilita.
+  Lo que plantea la pregunta: ¿hasta qué punto el liderazgo es un requisito para una economía de "producción para el intercambio"?
+						</aside>
+					</section>
+
+				</section>
+
+				<section class="fragments">
+					
+					<h3 style="color: darkorange;">4. Conclusions</h3>
+
+					<div id="left40">
+						
+						<figure>
+							<img src="images/Default_When_scarcity_hits_the_farming_households_in_the_Indus_3.jpg" style="margin-bottom: -10%;">
+							<figcaption>
+								<i style="font-size: 33%">
+									generated with Leonardo.AI
+								</i>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div id="right60" style="font-size: 60%;">
+						<ul>
+							<li class="fragment">
+								Tension 1 - crop dilemma:<br>
+								<i style="color: slateblue">risk</i> and <i style="color: gold">risk mitigation</i>
+							</li>
+							<li class="fragment">
+								Tension 2 - regional pooling:<br>
+								<i style="color: slateblue">exchange economy</i> and <i style="color: gold">use economy</i>
+							</li>
+							<li class="fragment">
+								opposed principles from household perspective?<br>
+								<i style="color: slateblue">intensification</i> and <i style="color: gold">resilience</i>
+							</li>
+							<br>
+							<li class="fragment">
+								Was the  Indus Civilisation urbanism<br>a failed experiment? 
+							</li>
+							<li class="fragment">
+								And why other forms (Sumer, Egypt) could overcome the same<br>climate crisis?
+							</li>
+						</ul>
+						<p class="fragment">
+							&rightarrow; exploration <b style="color:crimson">Indus Village model</b>
+						</p>
+						
+					</div>
+						
+					<aside class="notes">
+						Given our explorations with the Indus Village so far, we are able to distinguish two main tensions that, 
+						once modelled, can help us understand what a climate-driven food crises mean for an early form of urbanism.
+						|
+						The first tension was evidenced through the Land Crop model results and helped us identify the importance of what we called crop dilemma,
+						and how different weather regimes could have rendered certain crops as risky and other as adaptive.
+						This further led us to understanding multi-cropping as a risk mitigation strategy which, under climate stress, would help stabilise production
+						while decreasing its bulk volume (or at least exchange value).
+						|
+						The second tension is between economical priorities on exchange or (local) use.
+						We saw how we could talk about a constant pull towards household independence
+						and how social complexity streaches this limitation with leadership structures and homogeneising ideology.
+						|
+						We advance within these lines, further exploring both empirical evidence and modelling, aiming to interrogate 
+						wheter intensification and resilience are indeed in oppositition when it comes to household decisions.
+						|
+						There are still, many open questions, such as
+						Was urbanisation in the Indus Civilisation an experiment gone wrong?
+						Why ruralisation seem to have been the most effective response towards a crisis in this case,
+						but not for other similar, and connected urban cultures?
+						|
+						Our next steps are to consolidate and fully integrate the remaining IndusVillage submodels, 
+						which will allow us to address these question in a more systematic manner.
+						============================================================
+						Dadas nuestras exploraciones con Indus Village hasta ahora, podemos distinguir dos tensiones principales que,
+  una vez modelado, puede ayudarnos a comprender lo que significa una crisis alimentaria impulsada por el clima para una forma temprana de urbanismo.
+  |
+  La primera tensión se evidenció a través de los resultados del modelo de cultivos terrestres y nos ayudó a identificar la importancia de lo que llamamos dilema de los cultivos.
+  y cómo diferentes regímenes climáticos podrían haber hecho que ciertos cultivos fueran tan riesgosos y otros tan adaptables.
+  Esto nos llevó además a comprender los cultivos múltiples como una estrategia de mitigación de riesgos que, en condiciones de estrés climático, ayudaría a estabilizar la producción.
+  al mismo tiempo que disminuye su volumen a granel (o al menos su valor de cambio).
+  |
+  La segunda tensión es entre las prioridades económicas de intercambio o uso (local).
+  Vimos cómo podíamos hablar de un impulso constante hacia la independencia del hogar.
+  y cómo la complejidad social supera esta limitación con estructuras de liderazgo e ideología homogeneizadora.
+  |
+  Avanzamos en estas líneas, explorando más a fondo tanto la evidencia empírica como la modelización, con el objetivo de interrogar
+  si la intensificación y la resiliencia están efectivamente en oposición cuando se trata de decisiones domésticas.
+  |
+  Todavía quedan muchas preguntas abiertas, como
+  ¿Fue la urbanización en la civilización del Indo un experimento que salió mal?
+  ¿Por qué la ruralización parece haber sido la respuesta más eficaz a una crisis en este caso?
+  ¿Pero no para otras culturas urbanas similares y conectadas?
+  |
+  Nuestros próximos pasos son consolidar e integrar completamente los submodelos restantes de IndusVillage,
+  lo que nos permitirá abordar estas cuestiones de una manera más sistemática.
+					</aside>
+				</section>
+
+				<section>
+					<h3>Acknowledgements</h3>
+					<p style="font-size: 66%">
+						Thanks to the <b style="color: slateblue">Land, Water and Settlement</b> and <b style="color: crimson">TwoRains</b> teams:<br>
+						including<br>
+						Jennifer Bates, Jean-Phillipe Baudouin, Alena Giesche, Joanna Walker, 
+						M. Cemre Ustunkaya, Nathan Wright, Ravindra N. Singh, 
+						Aftab Alam, Alessandro Ceccarelli, Sagorika Chakraborty, 
+						Sudarshan Chakradhari, Arti Chowdhary, Yama Dixit, Charly French, Adam Green, 
+						Henry Green, Lily Green, David Hodell, Penny Jones, Carla Lancelotti, Emma Lightfoot, Frank Lynam, 
+						Sayantani Neogi, Hector Orengo, Arun Kumar Pandey, Danika Parikh, Vikas Pawar, Amit Ranjan,
+						David Redhouse, Dheerendra Pratab Singh, & Akshyeta Suryanarayan.
+						<br><br>
+						Special thanks also to the Department of AIHC and Archaeology, BHU, the European Research Council (ERC), 
+						and the UK-India Education and Research Initiative (UKIERI) for support and funding, and to the Archaeological 
+						Survey of India for permission to carry out the work.
+					</p>
+						
+					<aside class="notes">
+						I would like to thank our project members and collaborators, 
+						without them this work would not be possible.
+						====================================================
+						Me gustaría agradecer a los miembros y colaboradores de nuestro proyecto,
+  sin ellos este trabajo no sería posible.
+					</aside>
+
+				</section>
+
+				<section data-background="images/Default_Local_diversity_impedes_the_distinction_between_rural_1.jpg">
+					<br><br><br><br><br>
+					<p style="background-color: beige; color: black;"><i style="color: crimson;">THANK YOU</i> FOR YOUR ATTENTION!</p>
+					<div style="font-size: 50%; color: black; background-color: beige;">available at 
+						<a href="https://andros-spica.github.io/CEPHCIS-Angourakis-2024/" target="_blank">https://andros-spica.github.io/CEPHCIS-Angourakis-2024/</a><br>
+						<a href="https://andros-spica.github.io/CEPHCIS-Angourakis-2024/index.html?print-pdf" target="_blank">https://andros-spica.github.io/CEPHCIS-Angourakis-2024/index.html?print-pdf</a> (printable version)
+					</div>
+					<p style="font-size: 33%; color: black; background-color: beige; opacity: 50%;">
+						Image source: generated with Leonardo.AI
+					</p>
+						
+					<aside class="notes">
+						Thank you for your attention 
+						and I hope you enjoyed this presentation!
+						=======================================
+						Gracias por su atención
+  ¡Y espero que hayais disfrutado de esta presentación!
+					</aside>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="reveal.js-master/dist/reveal.js"></script>
+        <script src="reveal.js-master/plugin/zoom/zoom.js"></script>
+		<script src="reveal.js-master/plugin/notes/notes.js"></script>
+		<script src="reveal.js-master/plugin/search/search.js"></script>
+		<script src="reveal.js-master/plugin/markdown/markdown.js"></script>
+		<script src="reveal.js-master/plugin/highlight/highlight.js"></script>
+
+		<script src="reveal.js-menu/menu.js"></script>
+		<!--
+		<script src="reveal.js-plugins/audio-slideshow/plugin.js"></script>
+		<script src="reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+		<script src="reveal.js-plugins/audio-slideshow/recorder.js"></script>
+		-->
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				slideNumber: 'c/t',
+/*
+				audio: {
+					prefix: 'audio/',
+					suffix: '.webm',
+					defaultDuration: 5,
+					textToSpeechURL: "http://api.voicerss.org/?key=f02cebf4e99c493d8a0048fde8a96278&hl=en-gb&c=ogg&src=",
+					advance: 0,
+					autoplay: false,
+					defaultNotes: false,
+					defaultText: false,
+					playerOpacity: 0.5
+				},
+
+				menu: { // Menu works best with font-awesome installed: sudo apt-get install fonts-font-awesome
+					themes: false,
+					transitions: false,
+					markers: true,
+					hideMissingTitles: true
+				},
+
+				keyboard: { 
+					82: function() { Recorder.toggleRecording(); },	// press 'r' to start/stop recording
+					90: function() { Recorder.downloadZip(); }, 	// press 'z' to download zip containing audio files
+					84: function() { Recorder.fetchTTS(); } 	// press 't' to fetch TTS audio files
+  				},
+*/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu
+					/*,RevealAudioSlideshow, RevealAudioRecorder*/
+					]
+			});
+
+		</script>
+	</body>
+	<div id="background-header">
+		<div style="text-align:left; position:absolute; top:3%; left: 10%; font-size:100%; color:gray">
+			<i>Economía y Complejidad - CEPHCIS</i>
+			<br>
+			<b>Angourakis, 18 June 2024</b>
+		</div>
+		<div style="text-align:left; position:absolute; top:3%; right: 10%; font-size:100%; color:gray">
+			
+		</div>
+		<div style="text-align:right; position:absolute; top:6%; right: 10%; font-size:100%; color:gray">
+			<b><a style="color: darkcyan;" href="https://andros-spica.github.io/CEPHCIS-Angourakis-2024/">https://andros-spica.github.io/CEPHCIS-Angourakis-2024/</a></b>
+		</div>
+	</div>
+</html>
